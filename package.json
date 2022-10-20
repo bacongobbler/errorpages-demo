@@ -1,0 +1,21 @@
+{
+  "name": "errorpages-demo",
+  "version": "0.1.0",
+  "description": "error pages demo",
+  "author": "Fermyon Engineering <engineering@fermyon.com>",
+  "license": "Apache-2.0",
+  "source": "src/404.html",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "npm run catch-all && npm run status-pages",
+    "status-pages": "parcel build src/*.html --dist-dir www-status-pages --no-source-maps",
+    "catch-all": "parcel build src/404.html --dist-dir www-catch-all --no-source-maps"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2",
+    "parcel": "2"
+  },
+  "dependencies": {
+    "minireset.css": "^0.0.7"
+  }
+}

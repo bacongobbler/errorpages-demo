@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTTP Version Not Supported - Fermyon Cloud</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <style>
+        .container.is-fluid[_ngcontent-qti-c88] {
+            padding: 0;
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDSTtFQUNJLFVBQUE7QUFBUiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgICAmLmlzLWZsdWlkIHtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICB9XG59XG4iXX0= */
+    </style>
+    <style>
+        mat-drawer-container[_ngcontent-qti-c79] {
+            height: 100%;
+        }
+
+        .theme-light[_nghost-qti-c79] mat-drawer-container[_ngcontent-qti-c79],
+        .theme-light [_nghost-qti-c79] mat-drawer-container[_ngcontent-qti-c79] {
+            background-color: #eef4fc;
+        }
+
+        .theme-dark[_nghost-qti-c79] mat-drawer-container[_ngcontent-qti-c79],
+        .theme-dark [_nghost-qti-c79] mat-drawer-container[_ngcontent-qti-c79] {
+            background-color: #152a4d;
+        }
+
+        mat-drawer[_ngcontent-qti-c79] {
+            width: 720px;
+            padding: 48px;
+            padding-bottom: 0;
+            transform: none;
+            visibility: visible;
+            border-radius: 72px 0px 0px 0px;
+
+
+        }
+
+        .theme-light[_nghost-qti-c79] mat-drawer[_ngcontent-qti-c79],
+        .theme-light [_nghost-qti-c79] mat-drawer[_ngcontent-qti-c79] {
+            background: #FAFAFC;
+            border: 1px solid #b3bdd7;
+        }
+
+        .theme-dark[_nghost-qti-c79] mat-drawer[_ngcontent-qti-c79],
+        .theme-dark [_nghost-qti-c79] mat-drawer[_ngcontent-qti-c79] {
+            background: #061632;
+            border: 1px solid #465b8b;
+        }
+
+        mat-drawer[_ngcontent-qti-c79] .mat-drawer-inner-container[_ngcontent-qti-c79]::-webkit-scrollbar {
+            display: none;
+        }
+
+        mat-drawer[_ngcontent-qti-c79] .mat-drawer-inner-container[_ngcontent-qti-c79] {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        mat-drawer-content[_ngcontent-qti-c79] {
+            overflow: hidden;
+        }
+
+        .theme-light[_nghost-qti-c79] mat-drawer-content[_ngcontent-qti-c79],
+        .theme-light [_nghost-qti-c79] mat-drawer-content[_ngcontent-qti-c79] {
+            background-color: #e8eef6;
+        }
+
+        .theme-dark[_nghost-qti-c79] mat-drawer-content[_ngcontent-qti-c79],
+        .theme-dark [_nghost-qti-c79] mat-drawer-content[_ngcontent-qti-c79] {
+            background-color: #0d203f;
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRyYXdlci5jb21wb25lbnQuc2NzcyIsIi4uLy4uLy4uLy4uL3RoZW1lcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU1BO0VBQ0ksWUFBQTtBQUxKO0FDaUZZO0VEekVKLHlCQUFBO0FBTFI7QUM4RVk7RUR6RUoseUJBQUE7QUFGUjtBQU1BO0VBQ0ksWUFBQTtFQUNBLGFBQUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtFQUVBLCtCQUFBO0VBT0EsZ0RBQUE7RUFLQSw0Q0FBQTtBQWRKO0FDZ0VZO0VEM0RKLG1CQUFBO0VBQ0EseUJBQUE7QUFGUjtBQzREWTtFRDNESixtQkFBQTtFQUNBLHlCQUFBO0FBRVI7QUFFSTtFQUNJLGFBQUE7QUFBUjtBQUlJO0VBQ0ksd0JBQUEsRUFBQSxnQkFBQTtFQUNBLHFCQUFBLEVBQUEsWUFBQTtBQUZSO0FBTUE7RUFDSSxnQkFBQTtBQUhKO0FDNkNZO0VEdkNKLHlCQUFBO0FBSFI7QUMwQ1k7RUR2Q0oseUJBQUE7QUFBUiIsImZpbGUiOiJkcmF3ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAdXNlICcuLi8uLi8uLi8uLi90aGVtZXMnO1xuXG4kZHJhd2VyLWJhY2tncm91bmQtY29sb3I6IHRoZW1lcy4kYmFja2dyb3VuZC1jb250cmFzdDI7XG4kZHJhd2VyLWJvcmRlci1jb2xvcjogdGhlbWVzLiRibHVlLWNvbnRyYXN0NDtcbiRkcmF3ZXItY29udGFpbmVyLWJhY2tncm91bmQtY29sb3I6IHRoZW1lcy4kYmFja2dyb3VuZC1jb250cmFzdDE7XG5cbm1hdC1kcmF3ZXItY29udGFpbmVyIHtcbiAgICBoZWlnaHQ6IDEwMCU7XG5cbiAgICBAaW5jbHVkZSB0aGVtZXMudGhlbWVkKCkge1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0aGVtZXMuZnJvbS10aGVtZSgkZHJhd2VyLWNvbnRhaW5lci1iYWNrZ3JvdW5kLWNvbG9yKTtcbiAgICB9XG59XG5cbm1hdC1kcmF3ZXIge1xuICAgIHdpZHRoOiA3MjBweDtcbiAgICBwYWRkaW5nOiA0OHB4O1xuICAgIHBhZGRpbmctYm90dG9tOiAwO1xuICAgIHRyYW5zZm9ybTogbm9uZTtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuXG4gICAgYm9yZGVyLXJhZGl1czogNzJweCAwcHggMHB4IDBweDtcblxuICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgIGJhY2tncm91bmQ6IHRoZW1lcy5mcm9tLXRoZW1lKCRkcmF3ZXItYmFja2dyb3VuZC1jb2xvcik7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHRoZW1lcy5mcm9tLXRoZW1lKCRkcmF3ZXItYm9yZGVyLWNvbG9yKTtcbiAgICB9XG5cbiAgICAvKiBIaWRlIHNjcm9sbGJhciBmb3IgQ2hyb21lLCBTYWZhcmkgYW5kIE9wZXJhICovXG4gICAgLm1hdC1kcmF3ZXItaW5uZXItY29udGFpbmVyOjotd2Via2l0LXNjcm9sbGJhciB7XG4gICAgICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgfVxuXG4gICAgLyogSGlkZSBzY3JvbGxiYXIgZm9yIElFLCBFZGdlIGFuZCBGaXJlZm94ICovXG4gICAgLm1hdC1kcmF3ZXItaW5uZXItY29udGFpbmVyIHtcbiAgICAgICAgLW1zLW92ZXJmbG93LXN0eWxlOiBub25lOyAvKiBJRSBhbmQgRWRnZSAqL1xuICAgICAgICBzY3JvbGxiYXItd2lkdGg6IG5vbmU7IC8qIEZpcmVmb3ggKi9cbiAgICB9XG59XG5cbm1hdC1kcmF3ZXItY29udGVudCB7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHRoZW1lcy5mcm9tLXRoZW1lKHRoZW1lcy4kYmFja2dyb3VuZCk7XG4gICAgfVxufVxuIiwiJHByaW1hcnk6ICdwcmltYXJ5JztcbiRwcmltYXJ5LWNvbnRyYXN0MTogJ3ByaW1hcnktY29udHJhc3QxJztcbiRwcmltYXJ5LWNvbnRyYXN0MjogJ3ByaW1hcnktY29udHJhc3QyJztcbiRwcmltYXJ5LWNvbnRyYXN0MzogJ3ByaW1hcnktY29udHJhc3QzJztcbiRiYWNrZ3JvdW5kOiAnYmFja2dyb3VuZCc7XG4kYmFja2dyb3VuZC1ibHVyOiAnYmFja2dyb3VuZC1ibHVyJztcbiRiYWNrZ3JvdW5kLWNvbnRyYXN0MTogJ2JhY2tncm91bmQtY29udHJhc3QxJztcbiRiYWNrZ3JvdW5kLWNvbnRyYXN0MjogJ2JhY2tncm91bmQtY29udHJhc3QyJztcbiRibHVlLWNvbnRyYXN0MDogJ2JsdWUtY29udHJhc3QwJztcbiRibHVlLWNvbnRyYXN0MTogJ2JsdWUtY29udHJhc3QxJztcbiRibHVlLWNvbnRyYXN0MjogJ2JsdWUtY29udHJhc3QyJztcbiRibHVlLWNvbnRyYXN0MzogJ2JsdWUtY29udHJhc3QzJztcbiRibHVlLWNvbnRyYXN0NDogJ2JsdWUtY29udHJhc3Q0JztcbiRibHVlLWNvbnRyYXN0NTogJ2JsdWUtY29udHJhc3Q1JztcbiRibHVlLWNvbnRyYXN0NjogJ2JsdWUtY29udHJhc3Q2JztcbiRibHVlLWNvbnRyYXN0NzogJ2JsdWUtY29udHJhc3Q3JztcblxuJHJlZDogJ3JlZCc7XG4kZGFyay1yZWQ6ICdkYXJrLXJlZCc7XG4kbGlnaHQtcmVkOiAnbGlnaHQtcmVkJztcblxuJHRpdGxlLXVuZm9jdXNlZDogJ3RpdGxlLXVuZm9jdXNlZCc7XG5cbiR0aGVtZXM6IChcbiAgICBsaWdodDogKFxuICAgICAgICAjeyRwcmltYXJ5fTogIzM0ZThiZCxcbiAgICAgICAgI3skcHJpbWFyeS1jb250cmFzdDF9OiAjMDYzNDI5LFxuICAgICAgICAjeyRwcmltYXJ5LWNvbnRyYXN0Mn06ICMxZmJjYTAsXG4gICAgICAgICN7JHByaW1hcnktY29udHJhc3QzfTogIzE3NzI3MixcblxuICAgICAgICAjeyRiYWNrZ3JvdW5kfTogI2U4ZWVmNixcbiAgICAgICAgI3skYmFja2dyb3VuZC1ibHVyfTogI2IzYmRkN2NkLFxuXG4gICAgICAgICN7JGJhY2tncm91bmQtY29udHJhc3QxfTogI2VlZjRmYyxcbiAgICAgICAgI3skYmFja2dyb3VuZC1jb250cmFzdDJ9OiAjRkFGQUZDLFxuXG4gICAgICAgICN7JGJsdWUtY29udHJhc3QwfTogIzE0MjEzZCxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDF9OiAjODQ4ZmE4LFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0Mn06ICM5OWE2YzMsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3QzfTogI2YxZjVmZSxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDR9OiAjYjNiZGQ3LFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0NX06ICNENkRFRUQsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q2fTogIzcwN2E4ZixcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDd9OiAjNGI1ZjhmLFxuXG4gICAgICAgICN7JHJlZH06ICNjZTUwNTAsXG4gICAgICAgICN7JGRhcmstcmVkfTogIzc3M2E0OCxcbiAgICAgICAgI3skbGlnaHQtcmVkfTogI2ZlZDhkOCxcblxuICAgICAgICAjeyR0aXRsZS11bmZvY3VzZWR9OiAjN2U4YmEwLFxuICAgICksXG4gICAgZGFyazogKFxuICAgICAgICAjeyRwcmltYXJ5fTogIzM0ZThiZCxcbiAgICAgICAgI3skcHJpbWFyeS1jb250cmFzdDF9OiAjMDYzNDI5LFxuICAgICAgICAjeyRwcmltYXJ5LWNvbnRyYXN0Mn06ICMxZmJjYTAsXG4gICAgICAgICN7JHByaW1hcnktY29udHJhc3QzfTogIzE3NzI3MixcblxuICAgICAgICAjeyRiYWNrZ3JvdW5kfTogIzBkMjAzZixcbiAgICAgICAgI3skYmFja2dyb3VuZC1ibHVyfTogIzAzMGQxZWNkLFxuXG4gICAgICAgICN7JGJhY2tncm91bmQtY29udHJhc3QxfTogIzE1MmE0ZCxcbiAgICAgICAgI3skYmFja2dyb3VuZC1jb250cmFzdDJ9OiAjMDYxNjMyLFxuXG4gICAgICAgICN7JGJsdWUtY29udHJhc3QwfTogI2RiZTNlZixcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDF9OiAjOTNhNGM0LFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0Mn06ICM1ODZiOGEsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3QzfTogIzI1Mzc1ZixcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDR9OiAjNDY1YjhiLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0NX06ICMyZDQxNmUsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q2fTogIzYzNzlhYSxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDd9OiAjNmM4MGFlLFxuXG4gICAgICAgICN7JHJlZH06ICNjZTUwNTAsXG4gICAgICAgICN7JGRhcmstcmVkfTogIzc3M2E0OCxcbiAgICAgICAgI3skbGlnaHQtcmVkfTogI2ZlZDhkOCxcblxuICAgICAgICAjeyR0aXRsZS11bmZvY3VzZWR9OiAjN0U4QkEwLFxuICAgICksXG4pO1xuXG5AbWl4aW4gdGhlbWVkKCR1c2VWaWV3RW5jYXBzdWxhdGlvblNlbGVjdG9yOiB0cnVlKSB7XG4gICAgQGVhY2ggJHRoZW1lLCAkbWFwIGluICR0aGVtZXMge1xuICAgICAgICBAaWYgJHVzZVZpZXdFbmNhcHN1bGF0aW9uU2VsZWN0b3Ige1xuICAgICAgICAgICAgOmhvc3QtY29udGV4dCgudGhlbWUtI3skdGhlbWV9KSAmIHtcbiAgICAgICAgICAgICAgICAkdGhlbWUtbWFwOiAoKSAhZ2xvYmFsO1xuICAgICAgICAgICAgICAgIEBlYWNoICRrZXksICRzdWJtYXAgaW4gJG1hcCB7XG4gICAgICAgICAgICAgICAgICAgICR2YWx1ZTogbWFwLWdldChtYXAtZ2V0KCR0aGVtZXMsICR0aGVtZSksICcjeyRrZXl9Jyk7XG4gICAgICAgICAgICAgICAgICAgICR0aGVtZS1tYXA6IG1hcC1tZXJnZShcbiAgICAgICAgICAgICAgICAgICAgICAgICR0aGVtZS1tYXAsXG4gICAgICAgICAgICAgICAgICAgICAgICAoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgJGtleTogJHZhbHVlLFxuICAgICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICApICFnbG9iYWw7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICAgICAgICAgICR0aGVtZS1tYXA6IG51bGwgIWdsb2JhbDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfSBAZWxzZSB7XG4gICAgICAgICAgICAudGhlbWUtI3skdGhlbWV9ICYge1xuICAgICAgICAgICAgICAgICR0aGVtZS1tYXA6ICgpICFnbG9iYWw7XG4gICAgICAgICAgICAgICAgQGVhY2ggJGtleSwgJHN1Ym1hcCBpbiAkbWFwIHtcbiAgICAgICAgICAgICAgICAgICAgJHZhbHVlOiBtYXAtZ2V0KG1hcC1nZXQoJHRoZW1lcywgJHRoZW1lKSwgJyN7JGtleX0nKTtcbiAgICAgICAgICAgICAgICAgICAgJHRoZW1lLW1hcDogbWFwLW1lcmdlKFxuICAgICAgICAgICAgICAgICAgICAgICAgJHRoZW1lLW1hcCxcbiAgICAgICAgICAgICAgICAgICAgICAgIChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAka2V5OiAkdmFsdWUsXG4gICAgICAgICAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgICAgICAgICkgIWdsb2JhbDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgICAgICAgICAgJHRoZW1lLW1hcDogbnVsbCAhZ2xvYmFsO1xuICAgICAgICAgICAgfVxuICAgICAgICB9XG4gICAgfVxufVxuXG5AZnVuY3Rpb24gZnJvbS10aGVtZSgka2V5KSB7XG4gICAgQHJldHVybiBtYXAtZ2V0KCR0aGVtZS1tYXAsICRrZXkpO1xufVxuIl19 */
+    </style>
+    <style>
+        .mat-drawer-container {
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+            -webkit-overflow-scrolling: touch;
+            display: block;
+            overflow: hidden
+        }
+
+        .mat-drawer-container[fullscreen] {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute
+        }
+
+        .mat-drawer-container[fullscreen].mat-drawer-container-has-open {
+            overflow: hidden
+        }
+
+        .mat-drawer-container.mat-drawer-container-explicit-backdrop .mat-drawer-side {
+            z-index: 3
+        }
+
+        .mat-drawer-container.ng-animate-disabled .mat-drawer-backdrop,
+        .mat-drawer-container.ng-animate-disabled .mat-drawer-content,
+        .ng-animate-disabled .mat-drawer-container .mat-drawer-backdrop,
+        .ng-animate-disabled .mat-drawer-container .mat-drawer-content {
+            transition: none
+        }
+
+        .mat-drawer-backdrop {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            display: block;
+            z-index: 3;
+            visibility: hidden
+        }
+
+        .mat-drawer-backdrop.mat-drawer-shown {
+            visibility: visible
+        }
+
+        .mat-drawer-transition .mat-drawer-backdrop {
+            transition-duration: 400ms;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-property: background-color, visibility
+        }
+
+        .cdk-high-contrast-active .mat-drawer-backdrop {
+            opacity: .5
+        }
+
+        .mat-drawer-content {
+            position: relative;
+            z-index: 1;
+            display: block;
+            height: 100%;
+            overflow: auto
+        }
+
+        .mat-drawer-transition .mat-drawer-content {
+            transition-duration: 400ms;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-property: transform, margin-left, margin-right
+        }
+
+        .mat-drawer {
+            position: relative;
+            z-index: 4;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: 3;
+            outline: 0;
+            box-sizing: border-box;
+            overflow-y: auto;
+            transform: translate3d(-100%, 0, 0)
+        }
+
+        .cdk-high-contrast-active .mat-drawer,
+        .cdk-high-contrast-active [dir=rtl] .mat-drawer.mat-drawer-end {
+            border-right: solid 1px currentColor
+        }
+
+        .cdk-high-contrast-active [dir=rtl] .mat-drawer,
+        .cdk-high-contrast-active .mat-drawer.mat-drawer-end {
+            border-left: solid 1px currentColor;
+            border-right: none
+        }
+
+        .mat-drawer.mat-drawer-side {
+            z-index: 2
+        }
+
+        .mat-drawer.mat-drawer-end {
+            right: 0;
+            transform: translate3d(100%, 0, 0)
+        }
+
+        [dir=rtl] .mat-drawer {
+            transform: translate3d(100%, 0, 0)
+        }
+
+        [dir=rtl] .mat-drawer.mat-drawer-end {
+            left: 0;
+            right: auto;
+            transform: translate3d(-100%, 0, 0)
+        }
+
+        .mat-drawer[style*="visibility: hidden"] {
+            display: none
+        }
+
+        .mat-drawer-inner-container {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .mat-sidenav-fixed {
+            position: fixed
+        }
+    </style>
+    <style>
+        .navbar-end[_ngcontent-qti-c87] {
+            padding-right: 1em;
+            align-items: center;
+        }
+
+        a.navbar-item[_ngcontent-qti-c87]:focus {
+            background-color: transparent;
+        }
+
+        .theme-light[_nghost-qti-c87] a.navbar-item[_ngcontent-qti-c87]:hover,
+        .theme-light [_nghost-qti-c87] a.navbar-item[_ngcontent-qti-c87]:hover {
+            color: #eef4fc;
+            background-color: #eef4fc;
+        }
+
+        .theme-dark[_nghost-qti-c87] a.navbar-item[_ngcontent-qti-c87]:hover,
+        .theme-dark [_nghost-qti-c87] a.navbar-item[_ngcontent-qti-c87]:hover {
+            color: #152a4d;
+            background-color: #152a4d;
+        }
+
+        .navbar-brand[_ngcontent-qti-c87] {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        @media (min-width: 785px) and (max-width: 1408px) {
+            .navbar-menu[_ngcontent-qti-c87] {
+                display: flex;
+                flex-grow: 1;
+                flex-shrink: 0;
+                background: transparent;
+                box-shadow: none;
+            }
+        }
+
+        @media (max-width: 784px) {
+            .navbar-menu[_ngcontent-qti-c87] {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                width: 100vw;
+                border-radius: 40px 0px 0px 0px;
+            }
+
+            .theme-light[_nghost-qti-c87] .navbar-menu[_ngcontent-qti-c87],
+            .theme-light [_nghost-qti-c87] .navbar-menu[_ngcontent-qti-c87] {
+                background: #eef4fc;
+                border: 1px solid #b3bdd7;
+            }
+
+            .theme-dark[_nghost-qti-c87] .navbar-menu[_ngcontent-qti-c87],
+            .theme-dark [_nghost-qti-c87] .navbar-menu[_ngcontent-qti-c87] {
+                background: #152a4d;
+                border: 1px solid #465b8b;
+            }
+        }
+
+        @media (min-width: 785px) and (max-width: 1408px) {
+            .navbar-menu[_ngcontent-qti-c87] .navbar-end[_ngcontent-qti-c87] {
+                display: flex;
+                margin-left: auto;
+            }
+        }
+
+        @media (min-width: 785px) and (max-width: 1408px) {
+            .navbar-burger[_ngcontent-qti-c87] {
+                display: none;
+            }
+        }
+
+        .navbar-burger.is-active[_ngcontent-qti-c87] {
+            z-index: 2;
+            border-radius: 24px;
+            width: 40px;
+            height: 40px;
+            right: 24px;
+            top: 24px;
+        }
+
+        .theme-light[_nghost-qti-c87] .navbar-burger.is-active[_ngcontent-qti-c87],
+        .theme-light [_nghost-qti-c87] .navbar-burger.is-active[_ngcontent-qti-c87] {
+            background: #eef4fc;
+            border: 1px solid #b3bdd7;
+        }
+
+        .theme-dark[_nghost-qti-c87] .navbar-burger.is-active[_ngcontent-qti-c87],
+        .theme-dark [_nghost-qti-c87] .navbar-burger.is-active[_ngcontent-qti-c87] {
+            background: #152a4d;
+            border: 1px solid #465b8b;
+        }
+
+        nav.navbar[_ngcontent-qti-c87] {
+            width: 100vw;
+            height: 96px;
+            border-bottom: 0;
+        }
+
+        .theme-light[_nghost-qti-c87] nav.navbar[_ngcontent-qti-c87],
+        .theme-light [_nghost-qti-c87] nav.navbar[_ngcontent-qti-c87] {
+            background-color: #eef4fc;
+        }
+
+        .theme-dark[_nghost-qti-c87] nav.navbar[_ngcontent-qti-c87],
+        .theme-dark [_nghost-qti-c87] nav.navbar[_ngcontent-qti-c87] {
+            background-color: #152a4d;
+        }
+
+        @media (max-width: 784px) {
+            nav.navbar[_ngcontent-qti-c87] {
+                height: 69px;
+                display: block;
+            }
+        }
+
+        @media (min-width: 785px) and (max-width: 1408px) {
+            nav.navbar[_ngcontent-qti-c87] {
+                display: flex;
+            }
+        }
+
+        .navbar-logo[_ngcontent-qti-c87] {
+            width: 157px;
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5hdmJhci5jb21wb25lbnQuc2NzcyIsIi4uLy4uLy4uL3RoZW1lcy5zY3NzIiwiLi4vLi4vLi4vX21peGlucy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtBO0VBQ0ksa0JBQUE7RUFDQSxtQkFBQTtBQUpKOztBQVFJO0VBQ0ksNkJBQUE7QUFMUjs7QUM0RVk7RURqRUosY0FBQTtFQUNBLHlCQUFBO0FBUFI7O0FDdUVZO0VEakVKLGNBQUE7RUFDQSx5QkFBQTtBQUhSOztBQU9BO0VBQ0ksY0FBQTtFQUNBLGlCQUFBO0FBSko7O0FFWEk7RUZrQko7SUFFUSxhQUFBO0lBQ0EsWUFBQTtJQUNBLGNBQUE7SUFDQSx1QkFBQTtJQUNBLGdCQUFBO0VBSk47QUFDRjs7QUUzQkk7RUZ3Qko7SUFVUSxrQkFBQTtJQUNBLE9BQUE7SUFDQSxNQUFBO0lBQ0EsYUFBQTtJQUNBLFlBQUE7SUFDQSwrQkFBQTtFQUhOO0VDMkNVO0lEckNBLG1CQUFBO0lBQ0EseUJBQUE7RUFIVjtFQ3VDVTtJRHJDQSxtQkFBQTtJQUNBLHlCQUFBO0VBQ1Y7QUFDRjs7QUV2Q0k7RUZ5Q0E7SUFFUSxhQUFBO0lBQ0EsaUJBQUE7RUFBVjtBQUNGOztBRTdDSTtFRmlESjtJQUVRLGFBQUE7RUFETjtBQUNGOztBQUlBO0VBQ0ksVUFBQTtFQUNBLG1CQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxXQUFBO0VBQ0EsU0FBQTtBQURKOztBQ2FZO0VEVEosbUJBQUE7RUFDQSx5QkFBQTtBQURSOztBQ1NZO0VEVEosbUJBQUE7RUFDQSx5QkFBQTtBQUdSOztBQUNBO0VBQ0ksWUFBQTtFQUNBLFlBQUE7RUFDQSxnQkFBQTtBQUVKOztBQ0RZO0VERUoseUJBQUE7QUFFUjs7QUNKWTtFREVKLHlCQUFBO0FBS1I7O0FFdEZJO0VGMkVKO0lBVVEsWUFBQTtJQUNBLGNBQUE7RUFLTjtBQUNGOztBRXRGSTtFRnFFSjtJQWVRLGFBQUE7RUFNTjtBQUNGOztBQUhBO0VBQ0ksWUFBQTtBQU1KIiwiZmlsZSI6Im5hdmJhci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkB1c2UgJy4uLy4uLy4uL21peGlucyc7XG5AdXNlICcuLi8uLi8uLi90aGVtZXMnO1xuXG4kbmF2YmFyLWJhY2tncm91bmQtY29sb3I6IHRoZW1lcy4kYmFja2dyb3VuZC1jb250cmFzdDE7XG5cbi5uYXZiYXItZW5kIHtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxZW07XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuYS5uYXZiYXItaXRlbSB7XG4gICAgJjpmb2N1cyB7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICAgIH1cbn1cblxuYS5uYXZiYXItaXRlbTpob3ZlciB7XG4gICAgQGluY2x1ZGUgdGhlbWVzLnRoZW1lZCgpIHtcbiAgICAgICAgY29sb3I6IHRoZW1lcy5mcm9tLXRoZW1lKCRuYXZiYXItYmFja2dyb3VuZC1jb2xvcik7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHRoZW1lcy5mcm9tLXRoZW1lKCRuYXZiYXItYmFja2dyb3VuZC1jb2xvcik7XG4gICAgfVxufVxuXG4ubmF2YmFyLWJyYW5kIHtcbiAgICBwYWRkaW5nLXRvcDogMDtcbiAgICBwYWRkaW5nLWJvdHRvbTogMDtcbn1cblxuLm5hdmJhci1tZW51IHtcbiAgICBAaW5jbHVkZSBtaXhpbnMuZGVza3RvcCgpIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgZmxleC1ncm93OiAxO1xuICAgICAgICBmbGV4LXNocmluazogMDtcbiAgICAgICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG4gICAgICAgIGJveC1zaGFkb3c6IG5vbmU7XG4gICAgfVxuXG4gICAgQGluY2x1ZGUgbWl4aW5zLm1vYmlsZSgpIHtcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICBsZWZ0OiAwO1xuICAgICAgICB0b3A6IDA7XG4gICAgICAgIGhlaWdodDogMTAwdmg7XG4gICAgICAgIHdpZHRoOiAxMDB2dztcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNDBweCAwcHggMHB4IDBweDtcblxuICAgICAgICBAaW5jbHVkZSB0aGVtZXMudGhlbWVkKCkge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogdGhlbWVzLmZyb20tdGhlbWUoJG5hdmJhci1iYWNrZ3JvdW5kLWNvbG9yKTtcbiAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHRoZW1lcy5mcm9tLXRoZW1lKHRoZW1lcy4kYmx1ZS1jb250cmFzdDQpO1xuICAgICAgICB9XG4gICAgfVxuXG4gICAgLm5hdmJhci1lbmQge1xuICAgICAgICBAaW5jbHVkZSBtaXhpbnMuZGVza3RvcCgpIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBtYXJnaW4tbGVmdDogYXV0bztcbiAgICAgICAgfVxuICAgIH1cbn1cblxuLm5hdmJhci1idXJnZXIge1xuICAgIEBpbmNsdWRlIG1peGlucy5kZXNrdG9wKCkge1xuICAgICAgICBkaXNwbGF5OiBub25lO1xuICAgIH1cbn1cblxuLm5hdmJhci1idXJnZXIuaXMtYWN0aXZlIHtcbiAgICB6LWluZGV4OiAyO1xuICAgIGJvcmRlci1yYWRpdXM6IDI0cHg7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIHJpZ2h0OiAyNHB4O1xuICAgIHRvcDogMjRweDtcblxuICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgIGJhY2tncm91bmQ6IHRoZW1lcy5mcm9tLXRoZW1lKCRuYXZiYXItYmFja2dyb3VuZC1jb2xvcik7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHRoZW1lcy5mcm9tLXRoZW1lKHRoZW1lcy4kYmx1ZS1jb250cmFzdDQpO1xuICAgIH1cbn1cblxubmF2Lm5hdmJhciB7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIGhlaWdodDogOTZweDtcbiAgICBib3JkZXItYm90dG9tOiAwO1xuXG4gICAgQGluY2x1ZGUgdGhlbWVzLnRoZW1lZCgpIHtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogdGhlbWVzLmZyb20tdGhlbWUoJG5hdmJhci1iYWNrZ3JvdW5kLWNvbG9yKTtcbiAgICB9XG5cbiAgICBAaW5jbHVkZSBtaXhpbnMubW9iaWxlKCkge1xuICAgICAgICBoZWlnaHQ6IDY5cHg7XG4gICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIH1cblxuICAgIEBpbmNsdWRlIG1peGlucy5kZXNrdG9wKCkge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgIH1cbn1cblxuLm5hdmJhci1sb2dvIHtcbiAgICB3aWR0aDogMTU3cHg7XG59XG4iLCIkcHJpbWFyeTogJ3ByaW1hcnknO1xuJHByaW1hcnktY29udHJhc3QxOiAncHJpbWFyeS1jb250cmFzdDEnO1xuJHByaW1hcnktY29udHJhc3QyOiAncHJpbWFyeS1jb250cmFzdDInO1xuJHByaW1hcnktY29udHJhc3QzOiAncHJpbWFyeS1jb250cmFzdDMnO1xuJGJhY2tncm91bmQ6ICdiYWNrZ3JvdW5kJztcbiRiYWNrZ3JvdW5kLWJsdXI6ICdiYWNrZ3JvdW5kLWJsdXInO1xuJGJhY2tncm91bmQtY29udHJhc3QxOiAnYmFja2dyb3VuZC1jb250cmFzdDEnO1xuJGJhY2tncm91bmQtY29udHJhc3QyOiAnYmFja2dyb3VuZC1jb250cmFzdDInO1xuJGJsdWUtY29udHJhc3QwOiAnYmx1ZS1jb250cmFzdDAnO1xuJGJsdWUtY29udHJhc3QxOiAnYmx1ZS1jb250cmFzdDEnO1xuJGJsdWUtY29udHJhc3QyOiAnYmx1ZS1jb250cmFzdDInO1xuJGJsdWUtY29udHJhc3QzOiAnYmx1ZS1jb250cmFzdDMnO1xuJGJsdWUtY29udHJhc3Q0OiAnYmx1ZS1jb250cmFzdDQnO1xuJGJsdWUtY29udHJhc3Q1OiAnYmx1ZS1jb250cmFzdDUnO1xuJGJsdWUtY29udHJhc3Q2OiAnYmx1ZS1jb250cmFzdDYnO1xuJGJsdWUtY29udHJhc3Q3OiAnYmx1ZS1jb250cmFzdDcnO1xuXG4kcmVkOiAncmVkJztcbiRkYXJrLXJlZDogJ2RhcmstcmVkJztcbiRsaWdodC1yZWQ6ICdsaWdodC1yZWQnO1xuXG4kdGl0bGUtdW5mb2N1c2VkOiAndGl0bGUtdW5mb2N1c2VkJztcblxuJHRoZW1lczogKFxuICAgIGxpZ2h0OiAoXG4gICAgICAgICN7JHByaW1hcnl9OiAjMzRlOGJkLFxuICAgICAgICAjeyRwcmltYXJ5LWNvbnRyYXN0MX06ICMwNjM0MjksXG4gICAgICAgICN7JHByaW1hcnktY29udHJhc3QyfTogIzFmYmNhMCxcbiAgICAgICAgI3skcHJpbWFyeS1jb250cmFzdDN9OiAjMTc3MjcyLFxuXG4gICAgICAgICN7JGJhY2tncm91bmR9OiAjZThlZWY2LFxuICAgICAgICAjeyRiYWNrZ3JvdW5kLWJsdXJ9OiAjYjNiZGQ3Y2QsXG5cbiAgICAgICAgI3skYmFja2dyb3VuZC1jb250cmFzdDF9OiAjZWVmNGZjLFxuICAgICAgICAjeyRiYWNrZ3JvdW5kLWNvbnRyYXN0Mn06ICNGQUZBRkMsXG5cbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDB9OiAjMTQyMTNkLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0MX06ICM4NDhmYTgsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3QyfTogIzk5YTZjMyxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDN9OiAjZjFmNWZlLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0NH06ICNiM2JkZDcsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q1fTogI0Q2REVFRCxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDZ9OiAjNzA3YThmLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0N306ICM0YjVmOGYsXG5cbiAgICAgICAgI3skcmVkfTogI2NlNTA1MCxcbiAgICAgICAgI3skZGFyay1yZWR9OiAjNzczYTQ4LFxuICAgICAgICAjeyRsaWdodC1yZWR9OiAjZmVkOGQ4LFxuXG4gICAgICAgICN7JHRpdGxlLXVuZm9jdXNlZH06ICM3ZThiYTAsXG4gICAgKSxcbiAgICBkYXJrOiAoXG4gICAgICAgICN7JHByaW1hcnl9OiAjMzRlOGJkLFxuICAgICAgICAjeyRwcmltYXJ5LWNvbnRyYXN0MX06ICMwNjM0MjksXG4gICAgICAgICN7JHByaW1hcnktY29udHJhc3QyfTogIzFmYmNhMCxcbiAgICAgICAgI3skcHJpbWFyeS1jb250cmFzdDN9OiAjMTc3MjcyLFxuXG4gICAgICAgICN7JGJhY2tncm91bmR9OiAjMGQyMDNmLFxuICAgICAgICAjeyRiYWNrZ3JvdW5kLWJsdXJ9OiAjMDMwZDFlY2QsXG5cbiAgICAgICAgI3skYmFja2dyb3VuZC1jb250cmFzdDF9OiAjMTUyYTRkLFxuICAgICAgICAjeyRiYWNrZ3JvdW5kLWNvbnRyYXN0Mn06ICMwNjE2MzIsXG5cbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDB9OiAjZGJlM2VmLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0MX06ICM5M2E0YzQsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3QyfTogIzU4NmI4YSxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDN9OiAjMjUzNzVmLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0NH06ICM0NjViOGIsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q1fTogIzJkNDE2ZSxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDZ9OiAjNjM3OWFhLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0N306ICM2YzgwYWUsXG5cbiAgICAgICAgI3skcmVkfTogI2NlNTA1MCxcbiAgICAgICAgI3skZGFyay1yZWR9OiAjNzczYTQ4LFxuICAgICAgICAjeyRsaWdodC1yZWR9OiAjZmVkOGQ4LFxuXG4gICAgICAgICN7JHRpdGxlLXVuZm9jdXNlZH06ICM3RThCQTAsXG4gICAgKSxcbik7XG5cbkBtaXhpbiB0aGVtZWQoJHVzZVZpZXdFbmNhcHN1bGF0aW9uU2VsZWN0b3I6IHRydWUpIHtcbiAgICBAZWFjaCAkdGhlbWUsICRtYXAgaW4gJHRoZW1lcyB7XG4gICAgICAgIEBpZiAkdXNlVmlld0VuY2Fwc3VsYXRpb25TZWxlY3RvciB7XG4gICAgICAgICAgICA6aG9zdC1jb250ZXh0KC50aGVtZS0jeyR0aGVtZX0pICYge1xuICAgICAgICAgICAgICAgICR0aGVtZS1tYXA6ICgpICFnbG9iYWw7XG4gICAgICAgICAgICAgICAgQGVhY2ggJGtleSwgJHN1Ym1hcCBpbiAkbWFwIHtcbiAgICAgICAgICAgICAgICAgICAgJHZhbHVlOiBtYXAtZ2V0KG1hcC1nZXQoJHRoZW1lcywgJHRoZW1lKSwgJyN7JGtleX0nKTtcbiAgICAgICAgICAgICAgICAgICAgJHRoZW1lLW1hcDogbWFwLW1lcmdlKFxuICAgICAgICAgICAgICAgICAgICAgICAgJHRoZW1lLW1hcCxcbiAgICAgICAgICAgICAgICAgICAgICAgIChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAka2V5OiAkdmFsdWUsXG4gICAgICAgICAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgICAgICAgICkgIWdsb2JhbDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgICAgICAgICAgJHRoZW1lLW1hcDogbnVsbCAhZ2xvYmFsO1xuICAgICAgICAgICAgfVxuICAgICAgICB9IEBlbHNlIHtcbiAgICAgICAgICAgIC50aGVtZS0jeyR0aGVtZX0gJiB7XG4gICAgICAgICAgICAgICAgJHRoZW1lLW1hcDogKCkgIWdsb2JhbDtcbiAgICAgICAgICAgICAgICBAZWFjaCAka2V5LCAkc3VibWFwIGluICRtYXAge1xuICAgICAgICAgICAgICAgICAgICAkdmFsdWU6IG1hcC1nZXQobWFwLWdldCgkdGhlbWVzLCAkdGhlbWUpLCAnI3ska2V5fScpO1xuICAgICAgICAgICAgICAgICAgICAkdGhlbWUtbWFwOiBtYXAtbWVyZ2UoXG4gICAgICAgICAgICAgICAgICAgICAgICAkdGhlbWUtbWFwLFxuICAgICAgICAgICAgICAgICAgICAgICAgKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICRrZXk6ICR2YWx1ZSxcbiAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgKSAhZ2xvYmFsO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgICAgICAgICAkdGhlbWUtbWFwOiBudWxsICFnbG9iYWw7XG4gICAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICB9XG59XG5cbkBmdW5jdGlvbiBmcm9tLXRoZW1lKCRrZXkpIHtcbiAgICBAcmV0dXJuIG1hcC1nZXQoJHRoZW1lLW1hcCwgJGtleSk7XG59XG4iLCJAdXNlICdfdmFyaWFibGVzJztcbkB1c2UgJ3RoZW1lcyc7XG5cbkBtaXhpbiBtb2JpbGUge1xuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAje3ZhcmlhYmxlcy4kYnJlYWtwb2ludC1tb2JpbGV9KSB7XG4gICAgICAgIEBjb250ZW50O1xuICAgIH1cbn1cblxuQG1peGluIGRlc2t0b3Age1xuICAgIEBtZWRpYSAobWluLXdpZHRoOiAje3ZhcmlhYmxlcy4kYnJlYWtwb2ludC1tb2JpbGUgKyAxcHh9KSBhbmQgKG1heC13aWR0aDogI3t2YXJpYWJsZXMuJGJyZWFrcG9pbnQtZGVza3RvcH0pIHtcbiAgICAgICAgQGNvbnRlbnQ7XG4gICAgfVxufVxuXG5AbWl4aW4gd2lkZXNjcmVlbiB7XG4gICAgQG1lZGlhIChtaW4td2lkdGg6ICN7dmFyaWFibGVzLiRicmVha3BvaW50LWRlc2t0b3AgKyAxcHh9KSB7XG4gICAgICAgIEBjb250ZW50O1xuICAgIH1cbn1cblxuQG1peGluIGJhY2tncm91bmQtZ3JhcGhpYy1jdXRvZmYge1xuICAgIEBtZWRpYSAobWF4LWhlaWdodDogI3t2YXJpYWJsZXMuJGJyZWFrcG9pbnQtYmFja2dyb3VuZC1ncmFwaGljfSkge1xuICAgICAgICBAY29udGVudDtcbiAgICB9XG59XG5cbkBtaXhpbiBzY3JvbGxiYXIge1xuICAgICY6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgICAgICAgd2lkdGg6IDVweDtcbiAgICAgICAgbWFyZ2luLXRvcDogMjBweDtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10cmFjayB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3QzKTtcbiAgICAgICAgfVxuXG4gICAgICAgIG1hcmdpbi10b3A6IDIwcHg7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10aHVtYiB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3Q0KTtcbiAgICAgICAgfVxuXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10aHVtYjpob3ZlciB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3QyKTtcbiAgICAgICAgfVxuICAgIH1cbn1cbiJdfQ== */
+    </style>
+    <style>
+        div.logo[_ngcontent-qti-c80] {
+            text-align: center;
+        }
+
+        @media (min-width: 785px) and (max-width: 1408px) {
+            div.logo[_ngcontent-qti-c80] {
+                background-image: none;
+                width: auto;
+                height: auto;
+            }
+        }
+
+        .theme-light[_nghost-qti-c80] div.logo[_ngcontent-qti-c80]:focus,
+        .theme-light [_nghost-qti-c80] div.logo[_ngcontent-qti-c80]:focus {
+            color: #eef4fc;
+            background-color: #eef4fc;
+        }
+
+        .theme-dark[_nghost-qti-c80] div.logo[_ngcontent-qti-c80]:focus,
+        .theme-dark [_nghost-qti-c80] div.logo[_ngcontent-qti-c80]:focus {
+            color: #152a4d;
+            background-color: #152a4d;
+        }
+
+        .logo-content[_ngcontent-qti-c80] {
+            margin-top: 8px;
+        }
+
+        @media (min-width: 785px) and (max-width: 1408px) {
+            .logo-content[_ngcontent-qti-c80] img[_ngcontent-qti-c80] {
+                display: inline !important;
+            }
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvZ28uY29tcG9uZW50LnNjc3MiLCIuLi8uLi8uLi8uLi9fbWl4aW5zLnNjc3MiLCIuLi8uLi8uLi8uLi90aGVtZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLQTtFQUNJLGtCQUFBO0FBSko7QUNRSTtFRExKO0lBSVEsc0JBQUE7SUFDQSxXQUFBO0lBQ0EsWUFBQTtFQUhOO0FBQ0Y7QUUwRVk7RUZsRUosY0FBQTtFQUNBLHlCQUFBO0FBSlI7QUVxRVk7RUZsRUosY0FBQTtFQUNBLHlCQUFBO0FBQVI7QUFJQTtFQUNJLGVBQUE7QUFESjtBQ1pJO0VEZUE7SUFFUSwwQkFBQTtFQURWO0FBQ0YiLCJmaWxlIjoibG9nby5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkB1c2UgJy4uLy4uLy4uLy4uL3RoZW1lcyc7XG5AdXNlICcuLi8uLi8uLi8uLi9taXhpbnMnO1xuXG4kbmF2YmFyLWxvZ28tYmFja2dyb3VuZC1jb2xvcjogdGhlbWVzLiRiYWNrZ3JvdW5kLWNvbnRyYXN0MTtcblxuZGl2LmxvZ28ge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcblxuICAgIEBpbmNsdWRlIG1peGlucy5kZXNrdG9wKCkge1xuICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiBub25lO1xuICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgIH1cbn1cblxuZGl2LmxvZ286Zm9jdXMge1xuICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgIGNvbG9yOiB0aGVtZXMuZnJvbS10aGVtZSgkbmF2YmFyLWxvZ28tYmFja2dyb3VuZC1jb2xvcik7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHRoZW1lcy5mcm9tLXRoZW1lKCRuYXZiYXItbG9nby1iYWNrZ3JvdW5kLWNvbG9yKTtcbiAgICB9XG59XG5cbi5sb2dvLWNvbnRlbnQge1xuICAgIG1hcmdpbi10b3A6IDhweDtcblxuICAgIGltZyB7XG4gICAgICAgIEBpbmNsdWRlIG1peGlucy5kZXNrdG9wKCkge1xuICAgICAgICAgICAgZGlzcGxheTogaW5saW5lICFpbXBvcnRhbnQ7XG4gICAgICAgIH1cbiAgICB9XG59XG4iLCJAdXNlICdfdmFyaWFibGVzJztcbkB1c2UgJ3RoZW1lcyc7XG5cbkBtaXhpbiBtb2JpbGUge1xuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAje3ZhcmlhYmxlcy4kYnJlYWtwb2ludC1tb2JpbGV9KSB7XG4gICAgICAgIEBjb250ZW50O1xuICAgIH1cbn1cblxuQG1peGluIGRlc2t0b3Age1xuICAgIEBtZWRpYSAobWluLXdpZHRoOiAje3ZhcmlhYmxlcy4kYnJlYWtwb2ludC1tb2JpbGUgKyAxcHh9KSBhbmQgKG1heC13aWR0aDogI3t2YXJpYWJsZXMuJGJyZWFrcG9pbnQtZGVza3RvcH0pIHtcbiAgICAgICAgQGNvbnRlbnQ7XG4gICAgfVxufVxuXG5AbWl4aW4gd2lkZXNjcmVlbiB7XG4gICAgQG1lZGlhIChtaW4td2lkdGg6ICN7dmFyaWFibGVzLiRicmVha3BvaW50LWRlc2t0b3AgKyAxcHh9KSB7XG4gICAgICAgIEBjb250ZW50O1xuICAgIH1cbn1cblxuQG1peGluIGJhY2tncm91bmQtZ3JhcGhpYy1jdXRvZmYge1xuICAgIEBtZWRpYSAobWF4LWhlaWdodDogI3t2YXJpYWJsZXMuJGJyZWFrcG9pbnQtYmFja2dyb3VuZC1ncmFwaGljfSkge1xuICAgICAgICBAY29udGVudDtcbiAgICB9XG59XG5cbkBtaXhpbiBzY3JvbGxiYXIge1xuICAgICY6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgICAgICAgd2lkdGg6IDVweDtcbiAgICAgICAgbWFyZ2luLXRvcDogMjBweDtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10cmFjayB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3QzKTtcbiAgICAgICAgfVxuXG4gICAgICAgIG1hcmdpbi10b3A6IDIwcHg7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10aHVtYiB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3Q0KTtcbiAgICAgICAgfVxuXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10aHVtYjpob3ZlciB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3QyKTtcbiAgICAgICAgfVxuICAgIH1cbn1cbiIsIiRwcmltYXJ5OiAncHJpbWFyeSc7XG4kcHJpbWFyeS1jb250cmFzdDE6ICdwcmltYXJ5LWNvbnRyYXN0MSc7XG4kcHJpbWFyeS1jb250cmFzdDI6ICdwcmltYXJ5LWNvbnRyYXN0Mic7XG4kcHJpbWFyeS1jb250cmFzdDM6ICdwcmltYXJ5LWNvbnRyYXN0Myc7XG4kYmFja2dyb3VuZDogJ2JhY2tncm91bmQnO1xuJGJhY2tncm91bmQtYmx1cjogJ2JhY2tncm91bmQtYmx1cic7XG4kYmFja2dyb3VuZC1jb250cmFzdDE6ICdiYWNrZ3JvdW5kLWNvbnRyYXN0MSc7XG4kYmFja2dyb3VuZC1jb250cmFzdDI6ICdiYWNrZ3JvdW5kLWNvbnRyYXN0Mic7XG4kYmx1ZS1jb250cmFzdDA6ICdibHVlLWNvbnRyYXN0MCc7XG4kYmx1ZS1jb250cmFzdDE6ICdibHVlLWNvbnRyYXN0MSc7XG4kYmx1ZS1jb250cmFzdDI6ICdibHVlLWNvbnRyYXN0Mic7XG4kYmx1ZS1jb250cmFzdDM6ICdibHVlLWNvbnRyYXN0Myc7XG4kYmx1ZS1jb250cmFzdDQ6ICdibHVlLWNvbnRyYXN0NCc7XG4kYmx1ZS1jb250cmFzdDU6ICdibHVlLWNvbnRyYXN0NSc7XG4kYmx1ZS1jb250cmFzdDY6ICdibHVlLWNvbnRyYXN0Nic7XG4kYmx1ZS1jb250cmFzdDc6ICdibHVlLWNvbnRyYXN0Nyc7XG5cbiRyZWQ6ICdyZWQnO1xuJGRhcmstcmVkOiAnZGFyay1yZWQnO1xuJGxpZ2h0LXJlZDogJ2xpZ2h0LXJlZCc7XG5cbiR0aXRsZS11bmZvY3VzZWQ6ICd0aXRsZS11bmZvY3VzZWQnO1xuXG4kdGhlbWVzOiAoXG4gICAgbGlnaHQ6IChcbiAgICAgICAgI3skcHJpbWFyeX06ICMzNGU4YmQsXG4gICAgICAgICN7JHByaW1hcnktY29udHJhc3QxfTogIzA2MzQyOSxcbiAgICAgICAgI3skcHJpbWFyeS1jb250cmFzdDJ9OiAjMWZiY2EwLFxuICAgICAgICAjeyRwcmltYXJ5LWNvbnRyYXN0M306ICMxNzcyNzIsXG5cbiAgICAgICAgI3skYmFja2dyb3VuZH06ICNlOGVlZjYsXG4gICAgICAgICN7JGJhY2tncm91bmQtYmx1cn06ICNiM2JkZDdjZCxcblxuICAgICAgICAjeyRiYWNrZ3JvdW5kLWNvbnRyYXN0MX06ICNlZWY0ZmMsXG4gICAgICAgICN7JGJhY2tncm91bmQtY29udHJhc3QyfTogI0ZBRkFGQyxcblxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0MH06ICMxNDIxM2QsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3QxfTogIzg0OGZhOCxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDJ9OiAjOTlhNmMzLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0M306ICNmMWY1ZmUsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q0fTogI2IzYmRkNyxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDV9OiAjRDZERUVELFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0Nn06ICM3MDdhOGYsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q3fTogIzRiNWY4ZixcblxuICAgICAgICAjeyRyZWR9OiAjY2U1MDUwLFxuICAgICAgICAjeyRkYXJrLXJlZH06ICM3NzNhNDgsXG4gICAgICAgICN7JGxpZ2h0LXJlZH06ICNmZWQ4ZDgsXG5cbiAgICAgICAgI3skdGl0bGUtdW5mb2N1c2VkfTogIzdlOGJhMCxcbiAgICApLFxuICAgIGRhcms6IChcbiAgICAgICAgI3skcHJpbWFyeX06ICMzNGU4YmQsXG4gICAgICAgICN7JHByaW1hcnktY29udHJhc3QxfTogIzA2MzQyOSxcbiAgICAgICAgI3skcHJpbWFyeS1jb250cmFzdDJ9OiAjMWZiY2EwLFxuICAgICAgICAjeyRwcmltYXJ5LWNvbnRyYXN0M306ICMxNzcyNzIsXG5cbiAgICAgICAgI3skYmFja2dyb3VuZH06ICMwZDIwM2YsXG4gICAgICAgICN7JGJhY2tncm91bmQtYmx1cn06ICMwMzBkMWVjZCxcblxuICAgICAgICAjeyRiYWNrZ3JvdW5kLWNvbnRyYXN0MX06ICMxNTJhNGQsXG4gICAgICAgICN7JGJhY2tncm91bmQtY29udHJhc3QyfTogIzA2MTYzMixcblxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0MH06ICNkYmUzZWYsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3QxfTogIzkzYTRjNCxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDJ9OiAjNTg2YjhhLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0M306ICMyNTM3NWYsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q0fTogIzQ2NWI4YixcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDV9OiAjMmQ0MTZlLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0Nn06ICM2Mzc5YWEsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q3fTogIzZjODBhZSxcblxuICAgICAgICAjeyRyZWR9OiAjY2U1MDUwLFxuICAgICAgICAjeyRkYXJrLXJlZH06ICM3NzNhNDgsXG4gICAgICAgICN7JGxpZ2h0LXJlZH06ICNmZWQ4ZDgsXG5cbiAgICAgICAgI3skdGl0bGUtdW5mb2N1c2VkfTogIzdFOEJBMCxcbiAgICApLFxuKTtcblxuQG1peGluIHRoZW1lZCgkdXNlVmlld0VuY2Fwc3VsYXRpb25TZWxlY3RvcjogdHJ1ZSkge1xuICAgIEBlYWNoICR0aGVtZSwgJG1hcCBpbiAkdGhlbWVzIHtcbiAgICAgICAgQGlmICR1c2VWaWV3RW5jYXBzdWxhdGlvblNlbGVjdG9yIHtcbiAgICAgICAgICAgIDpob3N0LWNvbnRleHQoLnRoZW1lLSN7JHRoZW1lfSkgJiB7XG4gICAgICAgICAgICAgICAgJHRoZW1lLW1hcDogKCkgIWdsb2JhbDtcbiAgICAgICAgICAgICAgICBAZWFjaCAka2V5LCAkc3VibWFwIGluICRtYXAge1xuICAgICAgICAgICAgICAgICAgICAkdmFsdWU6IG1hcC1nZXQobWFwLWdldCgkdGhlbWVzLCAkdGhlbWUpLCAnI3ska2V5fScpO1xuICAgICAgICAgICAgICAgICAgICAkdGhlbWUtbWFwOiBtYXAtbWVyZ2UoXG4gICAgICAgICAgICAgICAgICAgICAgICAkdGhlbWUtbWFwLFxuICAgICAgICAgICAgICAgICAgICAgICAgKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICRrZXk6ICR2YWx1ZSxcbiAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgKSAhZ2xvYmFsO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgICAgICAgICAkdGhlbWUtbWFwOiBudWxsICFnbG9iYWw7XG4gICAgICAgICAgICB9XG4gICAgICAgIH0gQGVsc2Uge1xuICAgICAgICAgICAgLnRoZW1lLSN7JHRoZW1lfSAmIHtcbiAgICAgICAgICAgICAgICAkdGhlbWUtbWFwOiAoKSAhZ2xvYmFsO1xuICAgICAgICAgICAgICAgIEBlYWNoICRrZXksICRzdWJtYXAgaW4gJG1hcCB7XG4gICAgICAgICAgICAgICAgICAgICR2YWx1ZTogbWFwLWdldChtYXAtZ2V0KCR0aGVtZXMsICR0aGVtZSksICcjeyRrZXl9Jyk7XG4gICAgICAgICAgICAgICAgICAgICR0aGVtZS1tYXA6IG1hcC1tZXJnZShcbiAgICAgICAgICAgICAgICAgICAgICAgICR0aGVtZS1tYXAsXG4gICAgICAgICAgICAgICAgICAgICAgICAoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgJGtleTogJHZhbHVlLFxuICAgICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICApICFnbG9iYWw7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICAgICAgICAgICR0aGVtZS1tYXA6IG51bGwgIWdsb2JhbDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgIH1cbn1cblxuQGZ1bmN0aW9uIGZyb20tdGhlbWUoJGtleSkge1xuICAgIEByZXR1cm4gbWFwLWdldCgkdGhlbWUtbWFwLCAka2V5KTtcbn1cbiJdfQ== */
+    </style>
+    <style>
+        .error-container[_ngcontent-qti-c115] {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            left: 0;
+            top: 0;
+        }
+
+        .error-container[_ngcontent-qti-c115] .error-page[_ngcontent-qti-c115] {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .error-container[_ngcontent-qti-c115] .error-page[_ngcontent-qti-c115] .error-centered-content[_ngcontent-qti-c115] {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 250px;
+            z-index: 2;
+        }
+
+        @media (max-width: 784px) {
+            .error-container[_ngcontent-qti-c115] .error-page[_ngcontent-qti-c115] .error-centered-content[_ngcontent-qti-c115] {
+                width: 90%;
+                margin-bottom: 100px;
+            }
+        }
+
+        .error-container[_ngcontent-qti-c115] .error-page[_ngcontent-qti-c115] .error-centered-content[_ngcontent-qti-c115] .back-error-button[_ngcontent-qti-c115] {
+            margin-top: 48px;
+        }
+
+        .error-container[_ngcontent-qti-c115] .error-page[_ngcontent-qti-c115] .error-logo[_ngcontent-qti-c115] {
+            width: 187px;
+            margin-top: 48px;
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcGxpY2F0aW9uLWVycm9yLmNvbXBvbmVudC5zY3NzIiwiLi4vLi4vLi4vLi4vX21peGlucy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLE9BQUE7RUFDQSxNQUFBO0FBREo7QUFHSTtFQUNJLGFBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtBQURSO0FBR1E7RUFDSSxhQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsbUJBQUE7RUFDQSx1QkFBQTtFQUNBLG9CQUFBO0VBQ0EsVUFBQTtBQURaO0FDakJJO0VEV0k7SUFVUSxVQUFBO0lBQ0Esb0JBQUE7RUFBZDtBQUNGO0FBRVk7RUFDSSxnQkFBQTtBQUFoQjtBQUlRO0VBQ0ksWUFBQTtFQUNBLGdCQUFBO0FBRloiLCJmaWxlIjoiYXBwbGljYXRpb24tZXJyb3IuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAdXNlICcuLi8uLi8uLi8uLi9taXhpbnMnO1xuXG4uZXJyb3ItY29udGFpbmVyIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgbGVmdDogMDtcbiAgICB0b3A6IDA7XG5cbiAgICAuZXJyb3ItcGFnZSB7XG4gICAgICAgIGhlaWdodDogMTAwdmg7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5cbiAgICAgICAgLmVycm9yLWNlbnRlcmVkLWNvbnRlbnQge1xuICAgICAgICAgICAgaGVpZ2h0OiAxMDB2aDtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogMjUwcHg7XG4gICAgICAgICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAgICAgICBAaW5jbHVkZSBtaXhpbnMubW9iaWxlKCkge1xuICAgICAgICAgICAgICAgIHdpZHRoOiA5MCU7XG4gICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogMTAwcHg7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIC5iYWNrLWVycm9yLWJ1dHRvbiB7XG4gICAgICAgICAgICAgICAgbWFyZ2luLXRvcDogNDhweDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuXG4gICAgICAgIC5lcnJvci1sb2dvIHtcbiAgICAgICAgICAgIHdpZHRoOiAxODdweDtcbiAgICAgICAgICAgIG1hcmdpbi10b3A6IDQ4cHg7XG4gICAgICAgIH1cbiAgICB9XG59XG4iLCJAdXNlICdfdmFyaWFibGVzJztcbkB1c2UgJ3RoZW1lcyc7XG5cbkBtaXhpbiBtb2JpbGUge1xuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAje3ZhcmlhYmxlcy4kYnJlYWtwb2ludC1tb2JpbGV9KSB7XG4gICAgICAgIEBjb250ZW50O1xuICAgIH1cbn1cblxuQG1peGluIGRlc2t0b3Age1xuICAgIEBtZWRpYSAobWluLXdpZHRoOiAje3ZhcmlhYmxlcy4kYnJlYWtwb2ludC1tb2JpbGUgKyAxcHh9KSBhbmQgKG1heC13aWR0aDogI3t2YXJpYWJsZXMuJGJyZWFrcG9pbnQtZGVza3RvcH0pIHtcbiAgICAgICAgQGNvbnRlbnQ7XG4gICAgfVxufVxuXG5AbWl4aW4gd2lkZXNjcmVlbiB7XG4gICAgQG1lZGlhIChtaW4td2lkdGg6ICN7dmFyaWFibGVzLiRicmVha3BvaW50LWRlc2t0b3AgKyAxcHh9KSB7XG4gICAgICAgIEBjb250ZW50O1xuICAgIH1cbn1cblxuQG1peGluIGJhY2tncm91bmQtZ3JhcGhpYy1jdXRvZmYge1xuICAgIEBtZWRpYSAobWF4LWhlaWdodDogI3t2YXJpYWJsZXMuJGJyZWFrcG9pbnQtYmFja2dyb3VuZC1ncmFwaGljfSkge1xuICAgICAgICBAY29udGVudDtcbiAgICB9XG59XG5cbkBtaXhpbiBzY3JvbGxiYXIge1xuICAgICY6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgICAgICAgd2lkdGg6IDVweDtcbiAgICAgICAgbWFyZ2luLXRvcDogMjBweDtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10cmFjayB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3QzKTtcbiAgICAgICAgfVxuXG4gICAgICAgIG1hcmdpbi10b3A6IDIwcHg7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10aHVtYiB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3Q0KTtcbiAgICAgICAgfVxuXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10aHVtYjpob3ZlciB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3QyKTtcbiAgICAgICAgfVxuICAgIH1cbn1cbiJdfQ== */
+    </style>
+    <style>
+        .background-graphic[_ngcontent-qti-c114] {
+            position: absolute;
+            bottom: 0;
+            pointer-events: none;
+            width: 100%;
+            max-height: 80%;
+        }
+
+        @media (max-width: 784px) {
+            .background-graphic[_ngcontent-qti-c114] {
+                width: 1408px;
+                left: 25%;
+                transform: translate(-25%, 0);
+            }
+        }
+
+        @media (min-width: 785px) and (max-width: 1408px) {
+            .background-graphic[_ngcontent-qti-c114] {
+                width: 1408px;
+                left: 25%;
+                transform: translate(-25%, 0);
+            }
+        }
+
+        @media (min-width: 1409px) {
+            .background-graphic[_ngcontent-qti-c114] {
+                max-height: 130%;
+            }
+        }
+
+        @media (max-height: 700px) {
+            .background-graphic[_ngcontent-qti-c114] {
+                display: none;
+            }
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhY2tncm91bmQtZ3JhcGhpYy5jb21wb25lbnQuc2NzcyIsIi4uLy4uLy4uLy4uL19taXhpbnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLG9CQUFBO0VBQ0EsV0FBQTtFQUNBLGVBQUE7QUFESjtBQ0ZJO0VERko7SUFRUSxhQUFBO0lBQ0EsU0FBQTtJQUNBLDZCQUFBO0VBQU47QUFDRjtBQ0hJO0VEUko7SUFjUSxhQUFBO0lBQ0EsU0FBQTtJQUNBLDZCQUFBO0VBQ047QUFDRjtBQ0pJO0VEZEo7SUFvQlEsZ0JBQUE7RUFFTjtBQUNGO0FDSEk7RURwQko7SUF3QlEsYUFBQTtFQUdOO0FBQ0YiLCJmaWxlIjoiYmFja2dyb3VuZC1ncmFwaGljLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQHVzZSAnLi4vLi4vLi4vLi4vbWl4aW5zJztcblxuLmJhY2tncm91bmQtZ3JhcGhpYyB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGJvdHRvbTogMDtcbiAgICBwb2ludGVyLWV2ZW50czogbm9uZTtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXgtaGVpZ2h0OiA4MCU7XG5cbiAgICBAaW5jbHVkZSBtaXhpbnMubW9iaWxlKCkge1xuICAgICAgICB3aWR0aDogMTQwOHB4O1xuICAgICAgICBsZWZ0OiAyNSU7XG4gICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC0yNSUsIDApO1xuICAgIH1cblxuICAgIEBpbmNsdWRlIG1peGlucy5kZXNrdG9wKCkge1xuICAgICAgICB3aWR0aDogMTQwOHB4O1xuICAgICAgICBsZWZ0OiAyNSU7XG4gICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC0yNSUsIDApO1xuICAgIH1cblxuICAgIEBpbmNsdWRlIG1peGlucy53aWRlc2NyZWVuKCkge1xuICAgICAgICBtYXgtaGVpZ2h0OiAxMzAlO1xuICAgIH1cblxuICAgIEBpbmNsdWRlIG1peGlucy5iYWNrZ3JvdW5kLWdyYXBoaWMtY3V0b2ZmKCkge1xuICAgICAgICBkaXNwbGF5OiBub25lO1xuICAgIH1cbn1cbiIsIkB1c2UgJ192YXJpYWJsZXMnO1xuQHVzZSAndGhlbWVzJztcblxuQG1peGluIG1vYmlsZSB7XG4gICAgQG1lZGlhIChtYXgtd2lkdGg6ICN7dmFyaWFibGVzLiRicmVha3BvaW50LW1vYmlsZX0pIHtcbiAgICAgICAgQGNvbnRlbnQ7XG4gICAgfVxufVxuXG5AbWl4aW4gZGVza3RvcCB7XG4gICAgQG1lZGlhIChtaW4td2lkdGg6ICN7dmFyaWFibGVzLiRicmVha3BvaW50LW1vYmlsZSArIDFweH0pIGFuZCAobWF4LXdpZHRoOiAje3ZhcmlhYmxlcy4kYnJlYWtwb2ludC1kZXNrdG9wfSkge1xuICAgICAgICBAY29udGVudDtcbiAgICB9XG59XG5cbkBtaXhpbiB3aWRlc2NyZWVuIHtcbiAgICBAbWVkaWEgKG1pbi13aWR0aDogI3t2YXJpYWJsZXMuJGJyZWFrcG9pbnQtZGVza3RvcCArIDFweH0pIHtcbiAgICAgICAgQGNvbnRlbnQ7XG4gICAgfVxufVxuXG5AbWl4aW4gYmFja2dyb3VuZC1ncmFwaGljLWN1dG9mZiB7XG4gICAgQG1lZGlhIChtYXgtaGVpZ2h0OiAje3ZhcmlhYmxlcy4kYnJlYWtwb2ludC1iYWNrZ3JvdW5kLWdyYXBoaWN9KSB7XG4gICAgICAgIEBjb250ZW50O1xuICAgIH1cbn1cblxuQG1peGluIHNjcm9sbGJhciB7XG4gICAgJjo6LXdlYmtpdC1zY3JvbGxiYXIge1xuICAgICAgICB3aWR0aDogNXB4O1xuICAgICAgICBtYXJnaW4tdG9wOiAyMHB4O1xuICAgICAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICAgIH1cblxuICAgICY6Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrIHtcbiAgICAgICAgQGluY2x1ZGUgdGhlbWVzLnRoZW1lZCgpIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IHRoZW1lcy5mcm9tLXRoZW1lKHRoZW1lcy4kYmx1ZS1jb250cmFzdDMpO1xuICAgICAgICB9XG5cbiAgICAgICAgbWFyZ2luLXRvcDogMjBweDtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogOHB4O1xuICAgICAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICAgIH1cblxuICAgICY6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iIHtcbiAgICAgICAgQGluY2x1ZGUgdGhlbWVzLnRoZW1lZCgpIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IHRoZW1lcy5mcm9tLXRoZW1lKHRoZW1lcy4kYmx1ZS1jb250cmFzdDQpO1xuICAgICAgICB9XG5cbiAgICAgICAgYm9yZGVyLXJhZGl1czogOHB4O1xuICAgIH1cblxuICAgICY6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmhvdmVyIHtcbiAgICAgICAgQGluY2x1ZGUgdGhlbWVzLnRoZW1lZCgpIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IHRoZW1lcy5mcm9tLXRoZW1lKHRoZW1lcy4kYmx1ZS1jb250cmFzdDIpO1xuICAgICAgICB9XG4gICAgfVxufVxuIl19 */
+    </style>
+    <style>
+        .app-not-found-container[_ngcontent-qti-c112] {
+            width: 719px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (max-width: 784px) {
+            .app-not-found-container[_ngcontent-qti-c112] {
+                width: 100%;
+            }
+        }
+
+        .app-not-found-container[_ngcontent-qti-c112] .ghost-icon-center[_ngcontent-qti-c112] {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] {
+            width: 683px;
+            text-align: center;
+            line-height: 26.47px;
+            margin-top: 24px;
+        }
+
+        .theme-light[_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112],
+        .theme-light [_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] {
+            color: #848fa8;
+        }
+
+        .theme-dark[_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112],
+        .theme-dark [_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] {
+            color: #93a4c4;
+        }
+
+        @media (max-width: 784px) {
+            .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] {
+                width: 100%;
+            }
+        }
+
+        .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] .gray-link[_ngcontent-qti-c112] {
+            text-decoration: underline;
+        }
+
+        .theme-light[_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] .gray-link[_ngcontent-qti-c112],
+        .theme-light [_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] .gray-link[_ngcontent-qti-c112] {
+            color: #848fa8;
+        }
+
+        .theme-dark[_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] .gray-link[_ngcontent-qti-c112],
+        .theme-dark [_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] .gray-link[_ngcontent-qti-c112] {
+            color: #93a4c4;
+        }
+
+        .theme-light[_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] .gray-link[_ngcontent-qti-c112]:hover,
+        .theme-light [_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] .gray-link[_ngcontent-qti-c112]:hover {
+            background-color: #e8eef6;
+        }
+
+        .theme-dark[_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] .gray-link[_ngcontent-qti-c112]:hover,
+        .theme-dark [_nghost-qti-c112] .app-not-found-container[_ngcontent-qti-c112] .fermyon-title[_ngcontent-qti-c112] .gray-link[_ngcontent-qti-c112]:hover {
+            background-color: #0d203f;
+        }
+
+        .app-not-found-container[_ngcontent-qti-c112] .fermyon-heading[_ngcontent-qti-c112] {
+            text-align: center;
+            line-height: 57.75px;
+        }
+
+        @media (max-width: 784px) {
+            .app-not-found-container[_ngcontent-qti-c112] .fermyon-heading[_ngcontent-qti-c112] {
+                line-height: 38.5px;
+            }
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcGxpY2F0aW9uLW5vdC1mb3VuZC5jb21wb25lbnQuc2NzcyIsIi4uLy4uLy4uLy4uL19taXhpbnMuc2NzcyIsIi4uLy4uLy4uLy4uL3RoZW1lcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBO0VBQ0ksWUFBQTtFQUNBLGFBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0FBRko7QUNESTtFRERKO0lBT1EsV0FBQTtFQUROO0FBQ0Y7QUFHSTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0FBRFI7QUFJSTtFQUNJLFlBQUE7RUFDQSxrQkFBQTtFQUNBLG9CQUFBO0VBQ0EsZ0JBQUE7QUFGUjtBRThEWTtFRnpEQSxjQUFBO0FBRlo7QUUyRFk7RUZ6REEsY0FBQTtBQUNaO0FDdkJJO0VEZUE7SUFXUSxXQUFBO0VBQ1Y7QUFDRjtBQUNRO0VBQ0ksMEJBQUE7QUFDWjtBRWdEWTtFRi9DSSxjQUFBO0FBRWhCO0FFNkNZO0VGL0NJLGNBQUE7QUFLaEI7QUUwQ1k7RUYxQ1EseUJBQUE7QUFHcEI7QUV1Q1k7RUYxQ1EseUJBQUE7QUFNcEI7QUFBSTtFQUNJLGtCQUFBO0VBQ0Esb0JBQUE7QUFFUjtBQy9DSTtFRDJDQTtJQUtRLG1CQUFBO0VBR1Y7QUFDRiIsImZpbGUiOiJhcHBsaWNhdGlvbi1ub3QtZm91bmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAdXNlICcuLi8uLi8uLi8uLi90aGVtZXMnO1xuQHVzZSAnLi4vLi4vLi4vLi4vbWl4aW5zJztcblxuLmFwcC1ub3QtZm91bmQtY29udGFpbmVyIHtcbiAgICB3aWR0aDogNzE5cHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5cbiAgICBAaW5jbHVkZSBtaXhpbnMubW9iaWxlKCkge1xuICAgICAgICB3aWR0aDogMTAwJTtcbiAgICB9XG5cbiAgICAuZ2hvc3QtaWNvbi1jZW50ZXIge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIH1cblxuICAgIC5mZXJteW9uLXRpdGxlIHtcbiAgICAgICAgd2lkdGg6IDY4M3B4O1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgIGxpbmUtaGVpZ2h0OiAyNi40N3B4O1xuICAgICAgICBtYXJnaW4tdG9wOiAyNHB4O1xuXG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBjb2xvcjogdGhlbWVzLmZyb20tdGhlbWUodGhlbWVzLiRibHVlLWNvbnRyYXN0MSk7XG4gICAgICAgIH1cblxuICAgICAgICBAaW5jbHVkZSBtaXhpbnMubW9iaWxlKCkge1xuICAgICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgIH1cblxuICAgICAgICAuZ3JheS1saW5rIHtcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xuICAgICAgICAgICAgQGluY2x1ZGUgdGhlbWVzLnRoZW1lZCgpIHtcbiAgICAgICAgICAgICAgICBjb2xvcjogdGhlbWVzLmZyb20tdGhlbWUodGhlbWVzLiRibHVlLWNvbnRyYXN0MSk7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICY6aG92ZXIge1xuICAgICAgICAgICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHRoZW1lcy5mcm9tLXRoZW1lKHRoZW1lcy4kYmFja2dyb3VuZCk7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfVxuICAgICAgICB9XG4gICAgfVxuXG4gICAgLmZlcm15b24taGVhZGluZyB7XG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAgICAgbGluZS1oZWlnaHQ6IDU3Ljc1cHg7XG5cbiAgICAgICAgQGluY2x1ZGUgbWl4aW5zLm1vYmlsZSgpIHtcbiAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAzOC41cHg7XG4gICAgICAgIH1cbiAgICB9XG59XG4iLCJAdXNlICdfdmFyaWFibGVzJztcbkB1c2UgJ3RoZW1lcyc7XG5cbkBtaXhpbiBtb2JpbGUge1xuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAje3ZhcmlhYmxlcy4kYnJlYWtwb2ludC1tb2JpbGV9KSB7XG4gICAgICAgIEBjb250ZW50O1xuICAgIH1cbn1cblxuQG1peGluIGRlc2t0b3Age1xuICAgIEBtZWRpYSAobWluLXdpZHRoOiAje3ZhcmlhYmxlcy4kYnJlYWtwb2ludC1tb2JpbGUgKyAxcHh9KSBhbmQgKG1heC13aWR0aDogI3t2YXJpYWJsZXMuJGJyZWFrcG9pbnQtZGVza3RvcH0pIHtcbiAgICAgICAgQGNvbnRlbnQ7XG4gICAgfVxufVxuXG5AbWl4aW4gd2lkZXNjcmVlbiB7XG4gICAgQG1lZGlhIChtaW4td2lkdGg6ICN7dmFyaWFibGVzLiRicmVha3BvaW50LWRlc2t0b3AgKyAxcHh9KSB7XG4gICAgICAgIEBjb250ZW50O1xuICAgIH1cbn1cblxuQG1peGluIGJhY2tncm91bmQtZ3JhcGhpYy1jdXRvZmYge1xuICAgIEBtZWRpYSAobWF4LWhlaWdodDogI3t2YXJpYWJsZXMuJGJyZWFrcG9pbnQtYmFja2dyb3VuZC1ncmFwaGljfSkge1xuICAgICAgICBAY29udGVudDtcbiAgICB9XG59XG5cbkBtaXhpbiBzY3JvbGxiYXIge1xuICAgICY6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgICAgICAgd2lkdGg6IDVweDtcbiAgICAgICAgbWFyZ2luLXRvcDogMjBweDtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10cmFjayB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3QzKTtcbiAgICAgICAgfVxuXG4gICAgICAgIG1hcmdpbi10b3A6IDIwcHg7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10aHVtYiB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3Q0KTtcbiAgICAgICAgfVxuXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICB9XG5cbiAgICAmOjotd2Via2l0LXNjcm9sbGJhci10aHVtYjpob3ZlciB7XG4gICAgICAgIEBpbmNsdWRlIHRoZW1lcy50aGVtZWQoKSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0aGVtZXMuZnJvbS10aGVtZSh0aGVtZXMuJGJsdWUtY29udHJhc3QyKTtcbiAgICAgICAgfVxuICAgIH1cbn1cbiIsIiRwcmltYXJ5OiAncHJpbWFyeSc7XG4kcHJpbWFyeS1jb250cmFzdDE6ICdwcmltYXJ5LWNvbnRyYXN0MSc7XG4kcHJpbWFyeS1jb250cmFzdDI6ICdwcmltYXJ5LWNvbnRyYXN0Mic7XG4kcHJpbWFyeS1jb250cmFzdDM6ICdwcmltYXJ5LWNvbnRyYXN0Myc7XG4kYmFja2dyb3VuZDogJ2JhY2tncm91bmQnO1xuJGJhY2tncm91bmQtYmx1cjogJ2JhY2tncm91bmQtYmx1cic7XG4kYmFja2dyb3VuZC1jb250cmFzdDE6ICdiYWNrZ3JvdW5kLWNvbnRyYXN0MSc7XG4kYmFja2dyb3VuZC1jb250cmFzdDI6ICdiYWNrZ3JvdW5kLWNvbnRyYXN0Mic7XG4kYmx1ZS1jb250cmFzdDA6ICdibHVlLWNvbnRyYXN0MCc7XG4kYmx1ZS1jb250cmFzdDE6ICdibHVlLWNvbnRyYXN0MSc7XG4kYmx1ZS1jb250cmFzdDI6ICdibHVlLWNvbnRyYXN0Mic7XG4kYmx1ZS1jb250cmFzdDM6ICdibHVlLWNvbnRyYXN0Myc7XG4kYmx1ZS1jb250cmFzdDQ6ICdibHVlLWNvbnRyYXN0NCc7XG4kYmx1ZS1jb250cmFzdDU6ICdibHVlLWNvbnRyYXN0NSc7XG4kYmx1ZS1jb250cmFzdDY6ICdibHVlLWNvbnRyYXN0Nic7XG4kYmx1ZS1jb250cmFzdDc6ICdibHVlLWNvbnRyYXN0Nyc7XG5cbiRyZWQ6ICdyZWQnO1xuJGRhcmstcmVkOiAnZGFyay1yZWQnO1xuJGxpZ2h0LXJlZDogJ2xpZ2h0LXJlZCc7XG5cbiR0aXRsZS11bmZvY3VzZWQ6ICd0aXRsZS11bmZvY3VzZWQnO1xuXG4kdGhlbWVzOiAoXG4gICAgbGlnaHQ6IChcbiAgICAgICAgI3skcHJpbWFyeX06ICMzNGU4YmQsXG4gICAgICAgICN7JHByaW1hcnktY29udHJhc3QxfTogIzA2MzQyOSxcbiAgICAgICAgI3skcHJpbWFyeS1jb250cmFzdDJ9OiAjMWZiY2EwLFxuICAgICAgICAjeyRwcmltYXJ5LWNvbnRyYXN0M306ICMxNzcyNzIsXG5cbiAgICAgICAgI3skYmFja2dyb3VuZH06ICNlOGVlZjYsXG4gICAgICAgICN7JGJhY2tncm91bmQtYmx1cn06ICNiM2JkZDdjZCxcblxuICAgICAgICAjeyRiYWNrZ3JvdW5kLWNvbnRyYXN0MX06ICNlZWY0ZmMsXG4gICAgICAgICN7JGJhY2tncm91bmQtY29udHJhc3QyfTogI0ZBRkFGQyxcblxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0MH06ICMxNDIxM2QsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3QxfTogIzg0OGZhOCxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDJ9OiAjOTlhNmMzLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0M306ICNmMWY1ZmUsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q0fTogI2IzYmRkNyxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDV9OiAjRDZERUVELFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0Nn06ICM3MDdhOGYsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q3fTogIzRiNWY4ZixcblxuICAgICAgICAjeyRyZWR9OiAjY2U1MDUwLFxuICAgICAgICAjeyRkYXJrLXJlZH06ICM3NzNhNDgsXG4gICAgICAgICN7JGxpZ2h0LXJlZH06ICNmZWQ4ZDgsXG5cbiAgICAgICAgI3skdGl0bGUtdW5mb2N1c2VkfTogIzdlOGJhMCxcbiAgICApLFxuICAgIGRhcms6IChcbiAgICAgICAgI3skcHJpbWFyeX06ICMzNGU4YmQsXG4gICAgICAgICN7JHByaW1hcnktY29udHJhc3QxfTogIzA2MzQyOSxcbiAgICAgICAgI3skcHJpbWFyeS1jb250cmFzdDJ9OiAjMWZiY2EwLFxuICAgICAgICAjeyRwcmltYXJ5LWNvbnRyYXN0M306ICMxNzcyNzIsXG5cbiAgICAgICAgI3skYmFja2dyb3VuZH06ICMwZDIwM2YsXG4gICAgICAgICN7JGJhY2tncm91bmQtYmx1cn06ICMwMzBkMWVjZCxcblxuICAgICAgICAjeyRiYWNrZ3JvdW5kLWNvbnRyYXN0MX06ICMxNTJhNGQsXG4gICAgICAgICN7JGJhY2tncm91bmQtY29udHJhc3QyfTogIzA2MTYzMixcblxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0MH06ICNkYmUzZWYsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3QxfTogIzkzYTRjNCxcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDJ9OiAjNTg2YjhhLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0M306ICMyNTM3NWYsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q0fTogIzQ2NWI4YixcbiAgICAgICAgI3skYmx1ZS1jb250cmFzdDV9OiAjMmQ0MTZlLFxuICAgICAgICAjeyRibHVlLWNvbnRyYXN0Nn06ICM2Mzc5YWEsXG4gICAgICAgICN7JGJsdWUtY29udHJhc3Q3fTogIzZjODBhZSxcblxuICAgICAgICAjeyRyZWR9OiAjY2U1MDUwLFxuICAgICAgICAjeyRkYXJrLXJlZH06ICM3NzNhNDgsXG4gICAgICAgICN7JGxpZ2h0LXJlZH06ICNmZWQ4ZDgsXG5cbiAgICAgICAgI3skdGl0bGUtdW5mb2N1c2VkfTogIzdFOEJBMCxcbiAgICApLFxuKTtcblxuQG1peGluIHRoZW1lZCgkdXNlVmlld0VuY2Fwc3VsYXRpb25TZWxlY3RvcjogdHJ1ZSkge1xuICAgIEBlYWNoICR0aGVtZSwgJG1hcCBpbiAkdGhlbWVzIHtcbiAgICAgICAgQGlmICR1c2VWaWV3RW5jYXBzdWxhdGlvblNlbGVjdG9yIHtcbiAgICAgICAgICAgIDpob3N0LWNvbnRleHQoLnRoZW1lLSN7JHRoZW1lfSkgJiB7XG4gICAgICAgICAgICAgICAgJHRoZW1lLW1hcDogKCkgIWdsb2JhbDtcbiAgICAgICAgICAgICAgICBAZWFjaCAka2V5LCAkc3VibWFwIGluICRtYXAge1xuICAgICAgICAgICAgICAgICAgICAkdmFsdWU6IG1hcC1nZXQobWFwLWdldCgkdGhlbWVzLCAkdGhlbWUpLCAnI3ska2V5fScpO1xuICAgICAgICAgICAgICAgICAgICAkdGhlbWUtbWFwOiBtYXAtbWVyZ2UoXG4gICAgICAgICAgICAgICAgICAgICAgICAkdGhlbWUtbWFwLFxuICAgICAgICAgICAgICAgICAgICAgICAgKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICRrZXk6ICR2YWx1ZSxcbiAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgKSAhZ2xvYmFsO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgICAgICAgICAkdGhlbWUtbWFwOiBudWxsICFnbG9iYWw7XG4gICAgICAgICAgICB9XG4gICAgICAgIH0gQGVsc2Uge1xuICAgICAgICAgICAgLnRoZW1lLSN7JHRoZW1lfSAmIHtcbiAgICAgICAgICAgICAgICAkdGhlbWUtbWFwOiAoKSAhZ2xvYmFsO1xuICAgICAgICAgICAgICAgIEBlYWNoICRrZXksICRzdWJtYXAgaW4gJG1hcCB7XG4gICAgICAgICAgICAgICAgICAgICR2YWx1ZTogbWFwLWdldChtYXAtZ2V0KCR0aGVtZXMsICR0aGVtZSksICcjeyRrZXl9Jyk7XG4gICAgICAgICAgICAgICAgICAgICR0aGVtZS1tYXA6IG1hcC1tZXJnZShcbiAgICAgICAgICAgICAgICAgICAgICAgICR0aGVtZS1tYXAsXG4gICAgICAgICAgICAgICAgICAgICAgICAoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgJGtleTogJHZhbHVlLFxuICAgICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICApICFnbG9iYWw7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICAgICAgICAgICR0aGVtZS1tYXA6IG51bGwgIWdsb2JhbDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgIH1cbn1cblxuQGZ1bmN0aW9uIGZyb20tdGhlbWUoJGtleSkge1xuICAgIEByZXR1cm4gbWFwLWdldCgkdGhlbWUtbWFwLCAka2V5KTtcbn1cbiJdfQ== */
+    </style>
+</head>
+
+<body>
+    <app-root _nghost-qti-c88="" ng-version="14.2.4">
+        <app-drawer _ngcontent-qti-c88="" _nghost-qti-c79="">
+            <mat-drawer-container _ngcontent-qti-c79="" class="mat-drawer-container example-container">
+                <div class="mat-drawer-backdrop ng-star-inserted"></div>
+                <!--bindings={
+        "ng-reflect-ng-if": "true"
+    }-->
+                <div class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
+                <!--mat-drawer-anchor-->
+                <div class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
+                <mat-drawer-content _ngcontent-qti-c79="" class="mat-drawer-content">
+                    <!--bindings={
+        "ng-reflect-ng-if": "false"
+    }-->
+                    <div _ngcontent-qti-c88="" class="container is-fluid">
+                        <router-outlet _ngcontent-qti-c88=""></router-outlet>
+                        <ng-component _nghost-qti-c115="" class="ng-star-inserted">
+                            <div _ngcontent-qti-c115="" class="error-container">
+                                <div _ngcontent-qti-c115="" class="error-page">
+                                    <app-logo _ngcontent-qti-c115="" class="error-logo" _nghost-qti-c80=""
+                                        ng-reflect-horizontal-align="false">
+                                        <div _ngcontent-qti-c80="" ng-reflect-ng-class="[object Object]" class="logo">
+                                            <div _ngcontent-qti-c80="" class="logo-content">
+                                                <div _ngcontent-qti-c80="" class="ng-star-inserted">
+                                                    <!--bindings={
+        "ng-reflect-ng-if": "false"
+    }--><img _ngcontent-qti-c80="" src="./images/logos/light-themed/normal.svg" class="ng-star-inserted">
+                                                    <!--bindings={
+        "ng-reflect-ng-if": "true"
+    }-->
+                                                </div>
+                                                <!--bindings={
+        "ng-reflect-ng-if": "true"
+    }-->
+                                                <!--bindings={
+        "ng-reflect-ng-if": "false"
+    }-->
+                                            </div>
+                                        </div>
+                                    </app-logo>
+                                    <div _ngcontent-qti-c115="" class="error-centered-content"
+                                        ng-reflect-ng-switch="404">
+                                        <app-application-not-found _ngcontent-qti-c115="" _nghost-qti-c112=""
+                                            class="ng-star-inserted">
+                                            <div _ngcontent-qti-c112="" class="app-not-found-container">
+                                                <div _ngcontent-qti-c112="" class="ghost-icon-center">
+                                                    <svg-icon _ngcontent-qti-c112=""
+                                                        src="./images/icons/app-icons/ghost-icon-light.svg"
+                                                        ng-reflect-src="./images/icons/app-i"
+                                                        ng-reflect-svg-style="[object Object]"><svg width="124"
+                                                            height="133" viewBox="0 0 124 133" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg" _ngcontent-qti-c112=""
+                                                            aria-hidden="true" style="width: 109px; height: 115px;">
+                                                            <path
+                                                                d="M30.7694 50.3687C30.7694 27.5214 49.2908 9 72.138 9C95.2161 9 113.925 27.7085 113.925 50.7865V67.2125C113.925 96.6368 90.6557 120.793 61.252 121.894L10.7814 123.784C9.0563 123.848 8.29806 121.634 9.70072 120.627C22.9263 111.138 30.7694 95.8578 30.7694 79.5802V50.3687Z"
+                                                                fill="url(#paint0_linear_1248_693)"
+                                                                _ngcontent-qti-c112=""></path>
+                                                            <circle cx="86.8025" cy="51.3112" r="5.42453" fill="#061632"
+                                                                fill-opacity="0.9" _ngcontent-qti-c112=""></circle>
+                                                            <path
+                                                                d="M78.7731 65.0083C78.7731 67.4425 75.7616 68.8869 72.0467 68.8869C68.3318 68.8869 65.3203 67.4425 65.3203 65.0083C65.3203 63.2454 68.3318 63.2454 72.0467 63.2454C75.7616 63.2454 78.7731 63.2454 78.7731 65.0083Z"
+                                                                fill="#061632" fill-opacity="0.9"
+                                                                _ngcontent-qti-c112=""></path>
+                                                            <circle cx="57.2927" cy="50.8772" r="5.42453" fill="#061632"
+                                                                fill-opacity="0.9" _ngcontent-qti-c112=""></circle>
+                                                            <path
+                                                                d="M72.5609 4.5C47.2284 4.5 26.6923 25.0361 26.6923 50.3687V79.5802C26.6923 94.4079 19.5478 108.327 7.50027 116.971C2.47426 120.577 5.19119 128.512 11.3726 128.28L61.8432 126.391C93.665 125.199 118.847 99.0565 118.847 67.2125V50.7865C118.847 25.2232 98.1242 4.5 72.5609 4.5Z"
+                                                                stroke="#DBE3EF" stroke-opacity="0.05" stroke-width="9"
+                                                                _ngcontent-qti-c112=""></path>
+                                                            <defs _ngcontent-qti-c112="">
+                                                                <linearGradient id="paint0_linear_1248_693" x1="59.4623"
+                                                                    y1="9" x2="59.4623" y2="124"
+                                                                    gradientUnits="userSpaceOnUse"
+                                                                    _ngcontent-qti-c112="">
+                                                                    <stop stop-color="#8B9CBC" _ngcontent-qti-c112="">
+                                                                    </stop>
+                                                                    <stop offset="1" stop-color="#8B9CBC"
+                                                                        stop-opacity="0.7" _ngcontent-qti-c112="">
+                                                                    </stop>
+                                                                </linearGradient>
+                                                            </defs>
+                                                        </svg></svg-icon>
+                                                </div>
+                                                <div _ngcontent-qti-c112="" class="fermyon-heading"> Oops, it seems we
+                                                    can't find the page you're looking for </div>
+                                                <div _ngcontent-qti-c112="" class="fermyon-title"> The page you
+                                                    were looking for was not found in the Fermyon Cloud. Feel feel free
+                                                    to contact us on <a _ngcontent-qti-c112="" target="_blank"
+                                                        class="gray-link"
+                                                        href="https://discord.gg/P4Cx7xUbJu">Discord</a> if you believe
+                                                    this was not supposed to happen. </div>
+                                            </div>
+                                        </app-application-not-found>
+                                        <!--bindings={
+        "ng-reflect-ng-switch-case": "404"
+    }-->
+                                        <!--bindings={
+        "ng-reflect-ng-switch-case": "429"
+    }-->
+                                        <!--container-->
+                                    </div>
+                                </div>
+                                <app-background-graphic _ngcontent-qti-c115="" _nghost-qti-c114=""><svg
+                                        _ngcontent-qti-c114="" viewBox="0 0 1728 556" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="background-graphic ng-star-inserted">
+                                        <g _ngcontent-qti-c114="" opacity="0.3">
+                                            <g _ngcontent-qti-c114="" filter="url(#filter0_f_1060_2927)">
+                                                <circle _ngcontent-qti-c114="" cx="1830.32" cy="336.5" r="179.5"
+                                                    fill="#152A4C"></circle>
+                                            </g>
+                                            <circle _ngcontent-qti-c114="" cx="116.822" cy="371" r="32" fill="#152A4C">
+                                            </circle>
+                                            <path _ngcontent-qti-c114="" d="M-12.6152 533.25H1477.92V417.535H1937.82"
+                                                stroke="#061632" stroke-width="12" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <circle _ngcontent-qti-c114="" cx="491.702" cy="407.902" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="519.429" cy="407.902" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="519.429" cy="435.628" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="491.702" cy="435.628" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="547.156" cy="407.902" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="574.885" cy="407.902" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="574.885" cy="435.628" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="547.156" cy="435.628" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="876.876" cy="425.688" r="33.1539"
+                                                fill="#28FFCC" stroke="#28FFCC" stroke-width="3.93144"></circle>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1241.77 336.738V523.434H1220.72V336.738H1241.77Z" fill="#0D203F">
+                                            </path>
+                                            <circle _ngcontent-qti-c114="" cx="1232.48" cy="341.588" r="37.6627"
+                                                fill="#061632"></circle>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M830.968 486.714C831.248 478.676 834.091 466.37 841.299 456.473C848.025 447.237 858.948 439.396 878.034 439.396H1348.47C1357.19 439.396 1364.25 432.33 1364.25 423.614C1364.25 414.898 1357.19 407.832 1348.47 407.832H878.034C848.322 407.832 828.128 420.94 815.784 437.892C803.986 454.093 799.791 473.08 799.411 485.998C799.407 486.153 799.404 486.307 799.404 486.462V601.992C799.404 610.708 806.47 617.774 815.186 617.774C823.902 617.774 830.968 610.708 830.968 601.992V486.714Z"
+                                                fill="#0D203F"></path>
+                                            <circle _ngcontent-qti-c114="" cx="694.575" cy="421.306" r="26.9271"
+                                                stroke="#ECE5EE" stroke-width="8.0698"></circle>
+                                            <rect _ngcontent-qti-c114="" x="472.756" y="474.449" width="252.779"
+                                                height="5.54542" rx="2.77271" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1428.88" y="424.539" width="39.7422"
+                                                height="30.962" fill="#DA815B"></rect>
+                                            <circle _ngcontent-qti-c114="" cx="1542.1" cy="330.731" r="16.7535"
+                                                fill="white" stroke="#0D203F" stroke-width="9.93206"></circle>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="308.547" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="308.547" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="308.547" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="337.66" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="337.66" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="337.66" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <circle _ngcontent-qti-c114="" cx="876.649" cy="425.001" r="16.7535"
+                                                fill="white" stroke="#0D203F" stroke-width="9.93206"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1285.62" cy="466.595" r="16.7535"
+                                                fill="white" stroke="#0D203F" stroke-width="9.93206"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="973.693" cy="375.093" r="7.3939"
+                                                fill="#0E8FDD"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1019.91" cy="375.093" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1066.12" cy="375.093" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M638.475 380.617H691.984C722.355 380.617 736.817 367.601 736.817 334.434C736.817 301.268 736.817 256.725 736.817 240.334L736.656 223.623C736.656 216.231 744.33 209 755.899 209C767.469 209 774.982 217.677 774.982 223.944V289.988V580"
+                                                stroke="#061632" stroke-width="12.55"></path>
+                                            <rect _ngcontent-qti-c114="" x="613.822" y="228.766" width="191.325"
+                                                height="42.3893" rx="8.69055" fill="#152A4C"></rect>
+                                            <rect _ngcontent-qti-c114="" x="613.822" y="281.465" width="191.325"
+                                                height="42.3893" rx="8.69055" fill="#152A4C"></rect>
+                                            <rect _ngcontent-qti-c114="" x="620.697" y="235.637" width="4.58262"
+                                                height="4.58262" rx="2.29131" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="620.697" y="259.699" width="4.58262"
+                                                height="4.58262" rx="2.29131" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="779.943" y="243.66" width="13.7479"
+                                                height="13.7479" rx="6.87394" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="767.341" y="228.766" width="2.29131"
+                                                height="42.3893" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="620.697" y="288.34" width="4.58262"
+                                                height="4.58262" rx="2.29131" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="620.697" y="312.398" width="4.58262"
+                                                height="4.58262" rx="2.29131" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="779.943" y="296.359" width="13.7479"
+                                                height="13.7479" rx="6.87394" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="767.341" y="281.465" width="2.29131"
+                                                height="42.3893" fill="#25375F"></rect>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M175.762 560C175.762 495.665 175.762 459.155 175.762 423.497C175.762 387.839 142.969 374.308 126.572 372H-60.2665H-281"
+                                                stroke="#152A4C" stroke-width="26"></path>
+                                            <mask _ngcontent-qti-c114="" id="path-39-outside-1_1060_2927"
+                                                maskUnits="userSpaceOnUse" x="349.796" y="238.004" width="194"
+                                                height="194" fill="black">
+                                                <rect _ngcontent-qti-c114="" fill="white" x="349.796" y="238.004"
+                                                    width="194" height="194"></rect>
+                                                <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M412.77 250.004H361.796V420.004H531.707V250.004H480.734C480.734 268.782 465.52 284.004 446.752 284.004C427.984 284.004 412.77 268.782 412.77 250.004Z">
+                                                </path>
+                                            </mask>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M361.796 250.004V238.004H349.796V250.004H361.796ZM412.77 250.004L424.77 250.004L424.769 238.004H412.77V250.004ZM361.796 420.004H349.796V432.004H361.796V420.004ZM531.707 420.004V432.004H543.707V420.004H531.707ZM531.707 250.004H543.707V238.004H531.707V250.004ZM480.734 250.004V238.004H468.734L468.734 250.004L480.734 250.004ZM361.796 262.004H412.77V238.004H361.796V262.004ZM373.796 420.004V250.004H349.796V420.004H373.796ZM531.707 408.004H361.796V432.004H531.707V408.004ZM519.707 250.004V420.004H543.707V250.004H519.707ZM480.734 262.004H531.707V238.004H480.734V262.004ZM468.734 250.004C468.734 262.16 458.886 272.004 446.752 272.004V296.004C472.153 296.004 492.734 275.403 492.734 250.004L468.734 250.004ZM446.752 272.004C434.617 272.004 424.77 262.16 424.77 250.004L400.77 250.004C400.77 275.403 421.351 296.004 446.752 296.004V272.004Z"
+                                                fill="#152A4C" mask="url(#path-39-outside-1_1060_2927)"></path>
+                                            <path _ngcontent-qti-c114="" d="M293.258 582.246H1550.04V466.379H1937.82"
+                                                stroke="#061632" stroke-width="8" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M451.822 493C434.467 493 424.894 486.066 419.219 478.185C413.06 469.633 410.878 458.974 410.878 452.063V351.228C410.878 351.146 410.877 351.065 410.875 350.984C410.713 342.243 408.009 329.447 400.041 318.462C391.606 306.833 377.752 298.002 357.642 298.002C337.532 298.002 323.677 306.833 315.242 318.462C307.275 329.447 304.57 342.243 304.408 350.984C304.408 351.008 304.407 351.033 304.407 351.058C304.406 351.114 304.406 351.171 304.406 351.228V451.771C304.068 458.785 301.488 469.48 295.178 478.105C289.236 486.226 279.729 493 263.461 493C247.194 493 237.687 486.226 231.745 478.105C225.434 469.48 222.855 458.785 222.517 451.771V351.228C222.517 331.33 213.611 317.592 202.089 309.178C191.181 301.213 178.466 298.333 169.769 298.011C169.658 298.007 169.546 298.004 169.435 298.003C160.624 297.9 147.686 300.313 136.568 308.28C124.761 316.741 116.045 330.784 116.045 351.228V452.063C116.045 452.165 116.046 452.268 116.048 452.37C116.177 457.892 114.569 466.436 109.732 473.214C105.398 479.287 97.8143 484.972 83.1299 484.972H-91.1777"
+                                                stroke="#061632" stroke-width="12" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <circle _ngcontent-qti-c114="" cx="694.896" cy="319.877" r="30.9664"
+                                                fill="#25375F"></circle>
+                                            <rect _ngcontent-qti-c114="" x="682.417" y="330.969" width="25.4201"
+                                                height="41.1344" fill="#25375F"></rect>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M698.379 315.613L698.379 372.035L690.487 372.035L690.487 315.613L698.379 315.613Z"
+                                                fill="#0D203F"></path>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M452.25 376.667C452.25 372.096 455.956 368.391 460.527 368.391H737.923C742.494 368.391 746.199 372.096 746.199 376.667V607.845C746.199 612.416 742.494 616.122 737.923 616.122H460.527C455.956 616.122 452.25 612.416 452.25 607.845V376.667Z"
+                                                fill="#25375F"></path>
+                                            <circle _ngcontent-qti-c114="" cx="491.998" cy="408.137" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="519.731" cy="408.137" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="519.731" cy="435.868" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="491.998" cy="435.868" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="547.46" cy="408.137" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="575.192" cy="408.137" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="575.192" cy="435.868" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="547.46" cy="435.868" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M908.416 425.927C908.416 443.154 894.451 457.12 877.224 457.12C859.997 457.12 846.031 443.154 846.031 425.927C846.031 408.7 859.997 394.734 877.224 394.734C894.451 394.734 908.416 408.7 908.416 425.927Z"
+                                                fill="#061632"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M920.255 425.925C920.255 449.691 900.989 468.956 877.224 468.956C853.459 468.956 834.193 449.691 834.193 425.925C834.193 402.16 853.459 382.895 877.224 382.895C900.989 382.895 920.255 402.16 920.255 425.925ZM877.224 457.118C894.451 457.118 908.417 443.153 908.417 425.925C908.417 408.698 894.451 394.733 877.224 394.733C859.997 394.733 846.032 408.698 846.032 425.925C846.032 443.153 859.997 457.118 877.224 457.118Z"
+                                                fill="#061632"></path>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M1940.82 374.928H1902.48C1902.48 359.286 1894.75 328 1863.81 328C1832.87 328 1825.13 359.286 1825.13 374.928C1824.68 389.619 1816.79 419 1788.81 419C1760.83 419 1752.94 389.619 1752.49 374.928C1752.27 359.286 1744.22 328 1713.82 328C1683.41 328 1675.36 359.286 1675.14 374.928C1674.92 389.619 1667.34 419 1638.82 419C1610.3 419 1602.72 389.619 1602.5 374.928C1602.05 359.286 1593.69 328 1563.82 328"
+                                                stroke="#1E3356" stroke-width="26" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1240.82 337V560H1224.82V337H1240.82Z" fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1210.7 450.453C1211.16 450.414 1211.62 450.395 1212.08 450.395H1370.15C1379.23 450.395 1386.59 457.756 1386.59 466.836C1386.59 475.917 1379.23 483.278 1370.15 483.278H1212.86C1207.89 483.812 1200.39 485.964 1194.45 490.383C1188.91 494.5 1184.61 500.52 1184.61 510.744V615.66C1184.61 624.74 1177.25 632.102 1168.17 632.102C1159.09 632.102 1151.73 624.74 1151.73 615.66V510.744C1151.73 488.8 1162.07 473.482 1174.83 463.995C1186.93 454.995 1201.01 451.268 1210.7 450.453Z"
+                                                fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1559.21 444.555C1558.59 444.503 1557.96 444.477 1557.33 444.477H1399.27C1386.92 444.477 1376.91 454.488 1376.91 466.838C1376.91 479.187 1386.92 489.199 1399.27 489.199H1556.23C1560.36 489.696 1566.62 491.552 1571.43 495.134C1575.67 498.284 1578.88 502.631 1578.88 510.745V615.661C1578.88 628.011 1588.89 638.022 1601.24 638.022C1613.59 638.022 1623.6 628.011 1623.6 615.661V510.745C1623.6 486.691 1612.18 469.7 1598.12 459.247C1584.95 449.454 1569.75 445.443 1559.21 444.555Z"
+                                                fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M831.311 486.963C831.59 478.925 834.434 466.617 841.643 456.718C848.37 447.481 859.294 439.639 878.383 439.639H1348.89C1357.6 439.639 1364.67 432.572 1364.67 423.855C1364.67 415.137 1357.6 408.07 1348.89 408.07H878.383C848.666 408.07 828.47 421.18 816.124 438.134C804.324 454.338 800.129 473.328 799.749 486.248C799.744 486.402 799.742 486.557 799.742 486.712V602.258C799.742 610.975 806.809 618.042 815.526 618.042C824.244 618.042 831.311 610.975 831.311 602.258V486.963Z"
+                                                fill="#061632"></path>
+                                            <rect _ngcontent-qti-c114="" x="1334.56" y="281.039" width="226.47"
+                                                height="101.218" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1334.56" y="397.043" width="173.781"
+                                                height="101.218" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1334.56" y="397.043" width="173.781"
+                                                height="15.2521" fill="#25375F"></rect>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M694.898 441.984C706.189 441.984 715.342 432.831 715.342 421.541C715.342 410.25 706.189 401.097 694.898 401.097C683.607 401.097 674.454 410.25 674.454 421.541C674.454 432.831 683.607 441.984 694.898 441.984ZM694.898 452.507C712 452.507 725.864 438.643 725.864 421.541C725.864 404.438 712 390.574 694.898 390.574C677.796 390.574 663.932 404.438 663.932 421.541C663.932 438.643 677.796 452.507 694.898 452.507Z"
+                                                fill="#152A4C"></path>
+                                            <rect _ngcontent-qti-c114="" x="473.049" y="474.695" width="252.815"
+                                                height="5.54621" rx="2.77311" fill="#152A4C"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1429.31" y="424.777" width="39.7479"
+                                                height="30.9664" fill="#061632"></rect>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M1564.27 330.957C1564.27 342.954 1554.54 352.68 1542.54 352.68C1530.55 352.68 1520.82 342.954 1520.82 330.957C1520.82 318.96 1530.55 309.234 1542.54 309.234C1554.54 309.234 1564.27 318.96 1564.27 330.957Z"
+                                                fill="#0D203F"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1542.54 318.481C1535.65 318.481 1530.07 324.066 1530.07 330.957C1530.07 337.848 1535.65 343.434 1542.54 343.434C1549.43 343.434 1555.02 337.848 1555.02 330.957C1555.02 324.066 1549.43 318.481 1542.54 318.481ZM1542.54 352.68C1554.54 352.68 1564.27 342.954 1564.27 330.957C1564.27 318.96 1554.54 309.234 1542.54 309.234C1530.55 309.234 1520.82 318.96 1520.82 330.957C1520.82 342.954 1530.55 352.68 1542.54 352.68Z"
+                                                fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1380.78 298.566C1385.14 298.566 1388.67 302.1 1388.67 306.459V440.841C1388.81 445.395 1390.4 452.356 1394.49 457.976C1398.33 463.259 1404.6 467.726 1415.44 467.726C1426.29 467.726 1432.56 463.259 1436.4 457.976C1440.52 452.316 1442.1 445.295 1442.22 440.744C1442.33 436.387 1445.96 432.949 1450.32 433.065C1454.67 433.181 1458.11 436.807 1458 441.165C1457.81 448.168 1455.55 458.479 1449.16 467.262C1442.5 476.422 1431.59 483.51 1415.44 483.51C1399.3 483.51 1388.39 476.422 1381.72 467.262C1375.33 458.479 1373.08 448.168 1372.89 441.165C1372.89 441.094 1372.89 441.024 1372.89 440.954V306.459C1372.89 302.1 1376.42 298.566 1380.78 298.566Z"
+                                                fill="#152A4C"></path>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="308.766" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="308.766" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="308.766" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="337.887" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="337.887" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="337.887" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M898.721 425.238C898.721 437.235 888.995 446.961 876.998 446.961C865.001 446.961 855.275 437.235 855.275 425.238C855.275 413.241 865.001 403.516 876.998 403.516C888.995 403.516 898.721 413.241 898.721 425.238Z"
+                                                fill="#0D203F"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M876.998 414.077C870.834 414.077 865.837 419.074 865.837 425.238C865.837 431.402 870.834 436.399 876.998 436.399C883.162 436.399 888.159 431.402 888.159 425.238C888.159 419.074 883.162 414.077 876.998 414.077ZM876.998 446.961C888.995 446.961 898.721 437.235 898.721 425.238C898.721 413.241 888.995 403.516 876.998 403.516C865.001 403.516 855.275 413.241 855.275 425.238C855.275 437.235 865.001 446.961 876.998 446.961Z"
+                                                fill="#25375F"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M116.322 358.939C109.938 358.939 104.762 364.115 104.762 370.5C104.762 376.885 109.938 382.061 116.322 382.061C122.707 382.061 127.883 376.885 127.883 370.5C127.883 364.115 122.707 358.939 116.322 358.939ZM116.322 393C128.749 393 138.822 382.926 138.822 370.5C138.822 358.074 128.749 348 116.322 348C103.896 348 93.8223 358.074 93.8223 370.5C93.8223 382.926 103.896 393 116.322 393Z"
+                                                fill="#25375F"></path>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M1307.75 466.836C1307.75 478.833 1298.03 488.559 1286.03 488.559C1274.03 488.559 1264.31 478.833 1264.31 466.836C1264.31 454.839 1274.03 445.113 1286.03 445.113C1298.03 445.113 1307.75 454.839 1307.75 466.836Z"
+                                                fill="#0D203F"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1286.03 454.359C1279.14 454.359 1273.55 459.945 1273.55 466.836C1273.55 473.727 1279.14 479.312 1286.03 479.312C1292.92 479.312 1298.51 473.727 1298.51 466.836C1298.51 459.945 1292.92 454.359 1286.03 454.359ZM1286.03 488.559C1298.03 488.559 1307.75 478.833 1307.75 466.836C1307.75 454.839 1298.03 445.113 1286.03 445.113C1274.03 445.113 1264.31 454.839 1264.31 466.836C1264.31 478.833 1274.03 488.559 1286.03 488.559Z"
+                                                fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1232.54 329.106C1225.65 329.106 1220.07 334.691 1220.07 341.582C1220.07 348.473 1225.65 354.059 1232.54 354.059C1239.44 354.059 1245.02 348.473 1245.02 341.582C1245.02 334.691 1239.44 329.106 1232.54 329.106ZM1232.54 363.305C1244.54 363.305 1254.27 353.579 1254.27 341.582C1254.27 329.585 1244.54 319.859 1232.54 319.859C1220.55 319.859 1210.82 329.585 1210.82 341.582C1210.82 353.579 1220.55 363.305 1232.54 363.305Z"
+                                                fill="#0D203F"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1261.08 380.37C1251.24 387.327 1239.65 389.185 1231.85 388.827L1232.45 375.687C1238.05 375.945 1246.57 374.522 1253.48 369.631C1260.03 364.998 1265.78 356.838 1265.78 342.047H1278.94C1278.94 360.903 1271.28 373.156 1261.08 380.37Z"
+                                                fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1203.68 380.37C1213.52 387.327 1225.11 389.185 1232.91 388.827L1232.31 375.687C1226.71 375.945 1218.19 374.522 1211.27 369.631C1204.72 364.998 1198.98 356.838 1198.98 342.047H1185.82C1185.82 360.903 1193.48 373.156 1203.68 380.37Z"
+                                                fill="#152A4C"></path>
+                                            <rect _ngcontent-qti-c114="" x="958.805" y="358.223" width="30.9664"
+                                                height="330.924" rx="8.27672" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1005.02" y="358.223" width="30.9664"
+                                                height="330.924" rx="8.27672" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1051.24" y="358.223" width="30.9664"
+                                                height="330.924" rx="8.27672" fill="#25375F"></rect>
+                                            <circle _ngcontent-qti-c114="" cx="974.057" cy="375.325" r="7.39496"
+                                                fill="#061632"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1020.28" cy="375.325" r="7.39496"
+                                                fill="#061632"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1066.49" cy="375.325" r="7.39496"
+                                                fill="#061632"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1232.5" cy="341.5" r="12.5"
+                                                fill="#25375F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="116.322" cy="370.5" r="11.5"
+                                                fill="#0D203F"></circle>
+                                        </g>
+                                        <defs _ngcontent-qti-c114="">
+                                            <filter _ngcontent-qti-c114="" id="filter0_f_1060_2927" x="1493.82" y="0"
+                                                width="673" height="673" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood _ngcontent-qti-c114="" flood-opacity="0"
+                                                    result="BackgroundImageFix"></feFlood>
+                                                <feBlend _ngcontent-qti-c114="" mode="normal" in="SourceGraphic"
+                                                    in2="BackgroundImageFix" result="shape"></feBlend>
+                                                <feGaussianBlur _ngcontent-qti-c114="" stdDeviation="78.5"
+                                                    result="effect1_foregroundBlur_1060_2927"></feGaussianBlur>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                    <!--bindings={
+        "ng-reflect-ng-if": "true"
+    }--><svg _ngcontent-qti-c114="" viewBox="0 0 1728 556" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="background-graphic ng-star-inserted">
+                                        <g _ngcontent-qti-c114="" opacity="0.02">
+                                            <g _ngcontent-qti-c114="" filter="url(#filter0_f_1685_401)">
+                                                <circle _ngcontent-qti-c114="" cx="1830.32" cy="336.5" r="179.5"
+                                                    fill="#152A4C"></circle>
+                                            </g>
+                                            <circle _ngcontent-qti-c114="" cx="116.822" cy="371" r="32" fill="#152A4C">
+                                            </circle>
+                                            <path _ngcontent-qti-c114="" d="M-12.6152 533.25H1477.92V417.535H1937.82"
+                                                stroke="#061632" stroke-width="12" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <circle _ngcontent-qti-c114="" cx="491.702" cy="407.902" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="519.429" cy="407.902" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="519.429" cy="435.628" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="491.702" cy="435.628" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="547.156" cy="407.902" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="574.885" cy="407.902" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="574.885" cy="435.628" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="547.156" cy="435.628" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="876.876" cy="425.688" r="33.1539"
+                                                fill="#28FFCC" stroke="#28FFCC" stroke-width="3.93144"></circle>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1241.77 336.738V523.434H1220.72V336.738H1241.77Z" fill="#0D203F">
+                                            </path>
+                                            <circle _ngcontent-qti-c114="" cx="1232.48" cy="341.588" r="37.6627"
+                                                fill="#061632"></circle>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M830.968 486.714C831.248 478.676 834.091 466.37 841.299 456.473C848.025 447.237 858.948 439.396 878.034 439.396H1348.47C1357.19 439.396 1364.25 432.33 1364.25 423.614C1364.25 414.898 1357.19 407.832 1348.47 407.832H878.034C848.322 407.832 828.128 420.94 815.784 437.892C803.986 454.093 799.791 473.08 799.411 485.998C799.407 486.153 799.404 486.307 799.404 486.462V601.992C799.404 610.708 806.47 617.774 815.186 617.774C823.902 617.774 830.968 610.708 830.968 601.992V486.714Z"
+                                                fill="#0D203F"></path>
+                                            <circle _ngcontent-qti-c114="" cx="694.575" cy="421.306" r="26.9271"
+                                                stroke="#ECE5EE" stroke-width="8.0698"></circle>
+                                            <rect _ngcontent-qti-c114="" x="472.756" y="474.449" width="252.779"
+                                                height="5.54542" rx="2.77271" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1428.88" y="424.539" width="39.7422"
+                                                height="30.962" fill="#DA815B"></rect>
+                                            <circle _ngcontent-qti-c114="" cx="1542.1" cy="330.731" r="16.7535"
+                                                fill="white" stroke="#0D203F" stroke-width="9.93206"></circle>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="308.547" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="308.547" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="308.547" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="337.66" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="337.66" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.1" y="337.66" width="42.5149"
+                                                height="14.7878" fill="#0D203F"></rect>
+                                            <circle _ngcontent-qti-c114="" cx="876.649" cy="425.001" r="16.7535"
+                                                fill="white" stroke="#0D203F" stroke-width="9.93206"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1285.62" cy="466.595" r="16.7535"
+                                                fill="white" stroke="#0D203F" stroke-width="9.93206"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="973.693" cy="375.093" r="7.3939"
+                                                fill="#0E8FDD"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1019.91" cy="375.093" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1066.12" cy="375.093" r="7.3939"
+                                                fill="#0D203F"></circle>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M638.475 380.617H691.984C722.355 380.617 736.817 367.601 736.817 334.434C736.817 301.268 736.817 256.725 736.817 240.334L736.656 223.623C736.656 216.231 744.33 209 755.899 209C767.469 209 774.982 217.677 774.982 223.944V289.988V580"
+                                                stroke="#061632" stroke-width="12.55"></path>
+                                            <rect _ngcontent-qti-c114="" x="613.822" y="228.766" width="191.325"
+                                                height="42.3893" rx="8.69055" fill="#152A4C"></rect>
+                                            <rect _ngcontent-qti-c114="" x="613.822" y="281.465" width="191.325"
+                                                height="42.3893" rx="8.69055" fill="#152A4C"></rect>
+                                            <rect _ngcontent-qti-c114="" x="620.697" y="235.637" width="4.58262"
+                                                height="4.58262" rx="2.29131" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="620.697" y="259.699" width="4.58262"
+                                                height="4.58262" rx="2.29131" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="779.943" y="243.66" width="13.7479"
+                                                height="13.7479" rx="6.87394" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="767.341" y="228.766" width="2.29131"
+                                                height="42.3893" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="620.697" y="288.34" width="4.58262"
+                                                height="4.58262" rx="2.29131" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="620.697" y="312.398" width="4.58262"
+                                                height="4.58262" rx="2.29131" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="779.943" y="296.359" width="13.7479"
+                                                height="13.7479" rx="6.87394" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="767.341" y="281.465" width="2.29131"
+                                                height="42.3893" fill="#25375F"></rect>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M175.762 560C175.762 495.665 175.762 459.155 175.762 423.497C175.762 387.839 142.969 374.308 126.572 372H-60.2665H-281"
+                                                stroke="#152A4C" stroke-width="26"></path>
+                                            <mask _ngcontent-qti-c114="" id="path-39-outside-1_1685_401"
+                                                maskUnits="userSpaceOnUse" x="349.796" y="238.004" width="194"
+                                                height="195" fill="black">
+                                                <rect _ngcontent-qti-c114="" fill="white" x="349.796" y="238.004"
+                                                    width="194" height="195"></rect>
+                                                <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M446.752 284.004C465.52 284.004 480.734 268.782 480.734 250.004L531.707 250.004V420.004H361.796V250.004L412.77 250.004C412.77 268.782 427.984 284.004 446.752 284.004Z">
+                                                </path>
+                                            </mask>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M480.734 250.004L480.734 238.004L468.734 238.004V250.004H480.734ZM531.707 250.004H543.707V238.004L531.707 238.004L531.707 250.004ZM531.707 420.004V432.004H543.707V420.004H531.707ZM361.796 420.004H349.796V432.004H361.796V420.004ZM361.796 250.004L361.796 238.004L349.796 238.004V250.004H361.796ZM412.77 250.004H424.77V238.004L412.769 238.004L412.77 250.004ZM468.734 250.004C468.734 262.16 458.886 272.004 446.752 272.004V296.004C472.153 296.004 492.734 275.403 492.734 250.004H468.734ZM480.734 262.004L531.707 262.004L531.707 238.004L480.734 238.004L480.734 262.004ZM519.707 250.004V420.004H543.707V250.004H519.707ZM531.707 408.004H361.796V432.004H531.707V408.004ZM373.796 420.004V250.004H349.796V420.004H373.796ZM361.796 262.004L412.77 262.004L412.769 238.004L361.796 238.004L361.796 262.004ZM446.752 272.004C434.617 272.004 424.77 262.16 424.77 250.004H400.77C400.77 275.403 421.351 296.004 446.752 296.004V272.004Z"
+                                                fill="#152A4C" mask="url(#path-39-outside-1_1685_401)"></path>
+                                            <path _ngcontent-qti-c114="" d="M293.258 582.246H1550.04V466.379H1937.82"
+                                                stroke="#061632" stroke-width="8" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M451.822 493C434.467 493 424.894 486.066 419.219 478.185C413.06 469.633 410.878 458.974 410.878 452.063V351.228C410.878 351.146 410.877 351.065 410.875 350.984C410.713 342.243 408.009 329.447 400.041 318.462C391.606 306.833 377.752 298.002 357.642 298.002C337.532 298.002 323.677 306.833 315.242 318.462C307.275 329.447 304.57 342.243 304.408 350.984C304.408 351.008 304.407 351.033 304.407 351.058C304.406 351.114 304.406 351.171 304.406 351.228V451.771C304.068 458.785 301.488 469.48 295.178 478.105C289.236 486.226 279.729 493 263.461 493C247.194 493 237.687 486.226 231.745 478.105C225.434 469.48 222.855 458.785 222.517 451.771V351.228C222.517 331.33 213.611 317.592 202.089 309.178C191.181 301.213 178.466 298.333 169.769 298.011C169.658 298.007 169.546 298.004 169.435 298.003C160.624 297.9 147.686 300.313 136.568 308.28C124.761 316.741 116.045 330.784 116.045 351.228V452.063C116.045 452.165 116.046 452.268 116.048 452.37C116.177 457.892 114.569 466.436 109.732 473.214C105.398 479.287 97.8143 484.972 83.1299 484.972H-91.1777"
+                                                stroke="#061632" stroke-width="12" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <circle _ngcontent-qti-c114="" cx="694.896" cy="319.877" r="30.9664"
+                                                fill="#25375F"></circle>
+                                            <rect _ngcontent-qti-c114="" x="682.417" y="330.969" width="25.4201"
+                                                height="41.1344" fill="#25375F"></rect>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M698.379 315.613L698.379 372.035L690.487 372.035L690.487 315.613L698.379 315.613Z"
+                                                fill="#0D203F"></path>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M452.25 376.667C452.25 372.096 455.956 368.391 460.527 368.391H737.923C742.494 368.391 746.199 372.096 746.199 376.667V607.845C746.199 612.416 742.494 616.122 737.923 616.122H460.527C455.956 616.122 452.25 612.416 452.25 607.845V376.667Z"
+                                                fill="#25375F"></path>
+                                            <circle _ngcontent-qti-c114="" cx="491.998" cy="408.137" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="519.731" cy="408.137" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="519.731" cy="435.868" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="491.998" cy="435.868" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="547.46" cy="408.137" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="575.192" cy="408.137" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="575.192" cy="435.868" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="547.46" cy="435.868" r="7.39496"
+                                                fill="#152A4C"></circle>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M908.416 425.927C908.416 443.154 894.451 457.12 877.224 457.12C859.997 457.12 846.031 443.154 846.031 425.927C846.031 408.7 859.997 394.734 877.224 394.734C894.451 394.734 908.416 408.7 908.416 425.927Z"
+                                                fill="#061632"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M920.255 425.925C920.255 449.691 900.989 468.956 877.224 468.956C853.459 468.956 834.193 449.691 834.193 425.925C834.193 402.16 853.459 382.895 877.224 382.895C900.989 382.895 920.255 402.16 920.255 425.925ZM877.224 457.118C894.451 457.118 908.417 443.153 908.417 425.925C908.417 408.698 894.451 394.733 877.224 394.733C859.997 394.733 846.032 408.698 846.032 425.925C846.032 443.153 859.997 457.118 877.224 457.118Z"
+                                                fill="#061632"></path>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M1940.82 374.928H1902.48C1902.48 359.286 1894.75 328 1863.81 328C1832.87 328 1825.13 359.286 1825.13 374.928C1824.68 389.619 1816.79 419 1788.81 419C1760.83 419 1752.94 389.619 1752.49 374.928C1752.27 359.286 1744.22 328 1713.82 328C1683.41 328 1675.36 359.286 1675.14 374.928C1674.92 389.619 1667.34 419 1638.82 419C1610.3 419 1602.72 389.619 1602.5 374.928C1602.05 359.286 1593.69 328 1563.82 328"
+                                                stroke="#1E3356" stroke-width="26" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1240.82 337V560H1224.82V337H1240.82Z" fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1210.7 450.453C1211.16 450.414 1211.62 450.395 1212.08 450.395H1370.15C1379.23 450.395 1386.59 457.756 1386.59 466.836C1386.59 475.917 1379.23 483.278 1370.15 483.278H1212.86C1207.89 483.812 1200.39 485.964 1194.45 490.383C1188.91 494.5 1184.61 500.52 1184.61 510.744V615.66C1184.61 624.74 1177.25 632.102 1168.17 632.102C1159.09 632.102 1151.73 624.74 1151.73 615.66V510.744C1151.73 488.8 1162.07 473.482 1174.83 463.995C1186.93 454.995 1201.01 451.268 1210.7 450.453Z"
+                                                fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1559.21 444.555C1558.59 444.503 1557.96 444.477 1557.33 444.477H1399.27C1386.92 444.477 1376.91 454.488 1376.91 466.838C1376.91 479.187 1386.92 489.199 1399.27 489.199H1556.23C1560.36 489.696 1566.62 491.552 1571.43 495.134C1575.67 498.284 1578.88 502.631 1578.88 510.745V615.661C1578.88 628.011 1588.89 638.022 1601.24 638.022C1613.59 638.022 1623.6 628.011 1623.6 615.661V510.745C1623.6 486.691 1612.18 469.7 1598.12 459.247C1584.95 449.454 1569.75 445.443 1559.21 444.555Z"
+                                                fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M831.311 486.963C831.59 478.925 834.434 466.617 841.643 456.718C848.37 447.481 859.294 439.639 878.383 439.639H1348.89C1357.6 439.639 1364.67 432.572 1364.67 423.855C1364.67 415.137 1357.6 408.07 1348.89 408.07H878.383C848.666 408.07 828.47 421.18 816.124 438.134C804.324 454.338 800.129 473.328 799.749 486.248C799.744 486.402 799.742 486.557 799.742 486.712V602.258C799.742 610.975 806.809 618.042 815.526 618.042C824.244 618.042 831.311 610.975 831.311 602.258V486.963Z"
+                                                fill="#061632"></path>
+                                            <rect _ngcontent-qti-c114="" x="1334.56" y="281.039" width="226.47"
+                                                height="101.218" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1334.56" y="397.043" width="173.781"
+                                                height="101.218" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1334.56" y="397.043" width="173.781"
+                                                height="15.2521" fill="#25375F"></rect>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M694.898 441.984C706.189 441.984 715.342 432.831 715.342 421.541C715.342 410.25 706.189 401.097 694.898 401.097C683.607 401.097 674.454 410.25 674.454 421.541C674.454 432.831 683.607 441.984 694.898 441.984ZM694.898 452.507C712 452.507 725.864 438.643 725.864 421.541C725.864 404.438 712 390.574 694.898 390.574C677.796 390.574 663.932 404.438 663.932 421.541C663.932 438.643 677.796 452.507 694.898 452.507Z"
+                                                fill="#152A4C"></path>
+                                            <rect _ngcontent-qti-c114="" x="473.049" y="474.695" width="252.815"
+                                                height="5.54621" rx="2.77311" fill="#152A4C"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1429.31" y="424.777" width="39.7479"
+                                                height="30.9664" fill="#061632"></rect>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M1564.27 330.957C1564.27 342.954 1554.54 352.68 1542.54 352.68C1530.55 352.68 1520.82 342.954 1520.82 330.957C1520.82 318.96 1530.55 309.234 1542.54 309.234C1554.54 309.234 1564.27 318.96 1564.27 330.957Z"
+                                                fill="#0D203F"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1542.54 318.481C1535.65 318.481 1530.07 324.066 1530.07 330.957C1530.07 337.848 1535.65 343.434 1542.54 343.434C1549.43 343.434 1555.02 337.848 1555.02 330.957C1555.02 324.066 1549.43 318.481 1542.54 318.481ZM1542.54 352.68C1554.54 352.68 1564.27 342.954 1564.27 330.957C1564.27 318.96 1554.54 309.234 1542.54 309.234C1530.55 309.234 1520.82 318.96 1520.82 330.957C1520.82 342.954 1530.55 352.68 1542.54 352.68Z"
+                                                fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1380.78 298.566C1385.14 298.566 1388.67 302.1 1388.67 306.459V440.841C1388.81 445.395 1390.4 452.356 1394.49 457.976C1398.33 463.259 1404.6 467.726 1415.44 467.726C1426.29 467.726 1432.56 463.259 1436.4 457.976C1440.52 452.316 1442.1 445.295 1442.22 440.744C1442.33 436.387 1445.96 432.949 1450.32 433.065C1454.67 433.181 1458.11 436.807 1458 441.165C1457.81 448.168 1455.55 458.479 1449.16 467.262C1442.5 476.422 1431.59 483.51 1415.44 483.51C1399.3 483.51 1388.39 476.422 1381.72 467.262C1375.33 458.479 1373.08 448.168 1372.89 441.165C1372.89 441.094 1372.89 441.024 1372.89 440.954V306.459C1372.89 302.1 1376.42 298.566 1380.78 298.566Z"
+                                                fill="#152A4C"></path>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="308.766" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="308.766" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="308.766" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="337.887" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="337.887" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1359.52" y="337.887" width="42.521"
+                                                height="14.7899" fill="#0D203F"></rect>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M898.721 425.238C898.721 437.235 888.995 446.961 876.998 446.961C865.001 446.961 855.275 437.235 855.275 425.238C855.275 413.241 865.001 403.516 876.998 403.516C888.995 403.516 898.721 413.241 898.721 425.238Z"
+                                                fill="#0D203F"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M876.998 414.077C870.834 414.077 865.837 419.074 865.837 425.238C865.837 431.402 870.834 436.399 876.998 436.399C883.162 436.399 888.159 431.402 888.159 425.238C888.159 419.074 883.162 414.077 876.998 414.077ZM876.998 446.961C888.995 446.961 898.721 437.235 898.721 425.238C898.721 413.241 888.995 403.516 876.998 403.516C865.001 403.516 855.275 413.241 855.275 425.238C855.275 437.235 865.001 446.961 876.998 446.961Z"
+                                                fill="#25375F"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M116.322 358.939C109.938 358.939 104.762 364.115 104.762 370.5C104.762 376.885 109.938 382.061 116.322 382.061C122.707 382.061 127.883 376.885 127.883 370.5C127.883 364.115 122.707 358.939 116.322 358.939ZM116.322 393C128.749 393 138.822 382.926 138.822 370.5C138.822 358.074 128.749 348 116.322 348C103.896 348 93.8223 358.074 93.8223 370.5C93.8223 382.926 103.896 393 116.322 393Z"
+                                                fill="#25375F"></path>
+                                            <path _ngcontent-qti-c114=""
+                                                d="M1307.75 466.836C1307.75 478.833 1298.03 488.559 1286.03 488.559C1274.03 488.559 1264.31 478.833 1264.31 466.836C1264.31 454.839 1274.03 445.113 1286.03 445.113C1298.03 445.113 1307.75 454.839 1307.75 466.836Z"
+                                                fill="#0D203F"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1286.03 454.359C1279.14 454.359 1273.55 459.945 1273.55 466.836C1273.55 473.727 1279.14 479.312 1286.03 479.312C1292.92 479.312 1298.51 473.727 1298.51 466.836C1298.51 459.945 1292.92 454.359 1286.03 454.359ZM1286.03 488.559C1298.03 488.559 1307.75 478.833 1307.75 466.836C1307.75 454.839 1298.03 445.113 1286.03 445.113C1274.03 445.113 1264.31 454.839 1264.31 466.836C1264.31 478.833 1274.03 488.559 1286.03 488.559Z"
+                                                fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1232.54 329.106C1225.65 329.106 1220.07 334.691 1220.07 341.582C1220.07 348.473 1225.65 354.059 1232.54 354.059C1239.44 354.059 1245.02 348.473 1245.02 341.582C1245.02 334.691 1239.44 329.106 1232.54 329.106ZM1232.54 363.305C1244.54 363.305 1254.27 353.579 1254.27 341.582C1254.27 329.585 1244.54 319.859 1232.54 319.859C1220.55 319.859 1210.82 329.585 1210.82 341.582C1210.82 353.579 1220.55 363.305 1232.54 363.305Z"
+                                                fill="#0D203F"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1261.08 380.37C1251.24 387.327 1239.65 389.185 1231.85 388.827L1232.45 375.687C1238.05 375.945 1246.57 374.522 1253.48 369.631C1260.03 364.998 1265.78 356.838 1265.78 342.047H1278.94C1278.94 360.903 1271.28 373.156 1261.08 380.37Z"
+                                                fill="#152A4C"></path>
+                                            <path _ngcontent-qti-c114="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1203.68 380.37C1213.52 387.327 1225.11 389.185 1232.91 388.827L1232.31 375.687C1226.71 375.945 1218.19 374.522 1211.27 369.631C1204.72 364.998 1198.98 356.838 1198.98 342.047H1185.82C1185.82 360.903 1193.48 373.156 1203.68 380.37Z"
+                                                fill="#152A4C"></path>
+                                            <rect _ngcontent-qti-c114="" x="958.805" y="358.223" width="30.9664"
+                                                height="330.924" rx="8.27672" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1005.02" y="358.223" width="30.9664"
+                                                height="330.924" rx="8.27672" fill="#25375F"></rect>
+                                            <rect _ngcontent-qti-c114="" x="1051.24" y="358.223" width="30.9664"
+                                                height="330.924" rx="8.27672" fill="#25375F"></rect>
+                                            <circle _ngcontent-qti-c114="" cx="974.057" cy="375.325" r="7.39496"
+                                                fill="#061632"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1020.28" cy="375.325" r="7.39496"
+                                                fill="#061632"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1066.49" cy="375.325" r="7.39496"
+                                                fill="#061632"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="1232.5" cy="341.5" r="12.5"
+                                                fill="#25375F"></circle>
+                                            <circle _ngcontent-qti-c114="" cx="116.322" cy="370.5" r="11.5"
+                                                fill="#0D203F"></circle>
+                                        </g>
+                                        <defs _ngcontent-qti-c114="">
+                                            <filter _ngcontent-qti-c114="" id="filter0_f_1685_401" x="1493.82" y="0"
+                                                width="673" height="673" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood _ngcontent-qti-c114="" flood-opacity="0"
+                                                    result="BackgroundImageFix"></feFlood>
+                                                <feBlend _ngcontent-qti-c114="" mode="normal" in="SourceGraphic"
+                                                    in2="BackgroundImageFix" result="shape"></feBlend>
+                                                <feGaussianBlur _ngcontent-qti-c114="" stdDeviation="78.5"
+                                                    result="effect1_foregroundBlur_1685_401"></feGaussianBlur>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                    <!--bindings={
+        "ng-reflect-ng-if": "true"
+    }-->
+                                </app-background-graphic>
+                            </div>
+                        </ng-component>
+                        <!--container-->
+                    </div>
+                </mat-drawer-content>
+                <!--bindings={
+        "ng-reflect-ng-if": "false"
+    }-->
+                <mat-drawer _ngcontent-qti-c79="" tabindex="-1" mode="side" position="end"
+                    class="mat-drawer ng-tns-c74-0 ng-trigger ng-trigger-transform mat-drawer-end mat-drawer-side ng-star-inserted"
+                    ng-reflect-mode="side" ng-reflect-position="end" ng-reflect-opened="false"
+                    style="box-shadow: none; visibility: hidden;">
+                    <div cdkscrollable="" class="mat-drawer-inner-container ng-tns-c74-0">
+                        <!--bindings={
+        "ng-reflect-portal": null
+    }-->
+                    </div>
+                </mat-drawer>
+            </mat-drawer-container>
+        </app-drawer>
+    </app-root>
+
+    <div class="cdk-live-announcer-element cdk-visually-hidden" aria-atomic="true" aria-live="polite"></div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
